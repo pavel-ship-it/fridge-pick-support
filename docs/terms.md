@@ -7,10 +7,10 @@ alt_url: /ru/terms
 
 # Terms of Use
 
-**Hungry Dishes** (iOS and Android)
+**Fridge Pick** (iOS and Android)
 Effective date: 27 October 2026
 
-These terms apply to your use of the Hungry Dishes app, developed by Pavel Yakimenko ("I", "me"). By installing or using the app, you agree to them. If you do not agree, please do not use the app.
+These terms apply to your use of the Fridge Pick app, developed by Pavel Yakimenko ("I", "me"). By installing or using the app, you agree to them. If you do not agree, please do not use the app.
 
 ### 1. License
 

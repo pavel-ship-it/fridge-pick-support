@@ -7,7 +7,7 @@ alt_url: /ru/credits
 
 # Photo Credits
 
-The following dish photos in Hungry Dishes come from [Wikimedia Commons](https://commons.wikimedia.org). They were resized (to about 800 px) for use in the app. Each photo is used under the license shown; photos under CC BY-SA licenses are shared under the same license.
+The following dish photos in Fridge Pick come from [Wikimedia Commons](https://commons.wikimedia.org). They were resized (to about 800 px) for use in the app. Each photo is used under the license shown; photos under CC BY-SA licenses are shared under the same license.
 
 | App file | Original work | Author | License |
 |---|---|---|---|

@@ -34,10 +34,10 @@
           {% if lang == "ru" %}<strong>Русский</strong>{% else %}<a href="{{ ru_url | relative_url }}" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('hd_lang','ru')}catch(e){}">Русский</a>{% endif %}
         </nav>
         {% if lang == "ru" %}
-        <h1><a href="{{ "/ru/" | relative_url }}">Hungry Dishes</a></h1>
-        <p>Поддержка, конфиденциальность и условия использования приложения Hungry Dishes</p>
+        <h1><a href="{{ "/ru/" | relative_url }}">Fridge Pick</a></h1>
+        <p>Поддержка, конфиденциальность и условия использования приложения Fridge Pick</p>
         {% else %}
-        <h1><a href="{{ "/" | relative_url }}">Hungry Dishes</a></h1>
+        <h1><a href="{{ "/" | relative_url }}">Fridge Pick</a></h1>
         <p>{{ site.description }}</p>
         {% endif %}
       </header>

@@ -1,13 +1,13 @@
 ---
-title: Hungry Dishes
+title: Fridge Pick
 layout: default
 lang: en
 alt_url: /ru/
 ---
 
-# Hungry Dishes
+# Fridge Pick
 
-Quick dishes for when you're hungry, sorted by how long ago you last ate them. For iPhone and Android.
+Pick quick dishes from what's in your fridge. Mark the products you have, see what you can make now, and send missing ingredients to your shopping list. For iPhone and Android.
 
 - [Support]({{ '/support' | relative_url }})
 - [Privacy Policy]({{ '/privacy' | relative_url }})
