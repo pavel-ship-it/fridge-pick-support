@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Руководство Fridge Pick: как пользоваться приложением</title>
+<meta name="description" content="Пошаговое руководство по Fridge Pick: холодильник, фильтры, страница блюда, карточки рецептов, I’m hungry, меню на неделю, список покупок, аллергии, исключённые продукты, техника и FAQ.">
+<link rel="canonical" href="https://pavel-ship-it.github.io/fridge-pick-support/ru/manual/">
+<link rel="alternate" hreflang="en" href="https://pavel-ship-it.github.io/fridge-pick-support/manual/">
+<link rel="alternate" hreflang="ru" href="https://pavel-ship-it.github.io/fridge-pick-support/ru/manual/">
+<link rel="alternate" hreflang="x-default" href="https://pavel-ship-it.github.io/fridge-pick-support/manual/">
+<meta name="theme-color" content="#7be993">
+<meta name="author" content="Pavel Yakimenko">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fridge Pick">
+<meta property="og:title" content="Руководство Fridge Pick: как пользоваться приложением">
+<meta property="og:description" content="Пошаговое руководство по Fridge Pick: холодильник, фильтры, страница блюда, карточки рецептов, I’m hungry, меню на неделю, список покупок, аллергии, исключённые продукты, техника и FAQ.">
+<meta property="og:url" content="https://pavel-ship-it.github.io/fridge-pick-support/ru/manual/">
+<meta property="og:image" content="https://pavel-ship-it.github.io/fridge-pick-support/assets/img/og-ru.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Fridge Pick: что приготовить прямо сейчас? 28 быстрых блюд из того, что есть в холодильнике">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Руководство Fridge Pick: как пользоваться приложением">
+<meta name="twitter:description" content="Пошаговое руководство по Fridge Pick: холодильник, фильтры, страница блюда, карточки рецептов, I’m hungry, меню на неделю, список покупок, аллергии, исключённые продукты, техника и FAQ.">
+<meta name="twitter:image" content="https://pavel-ship-it.github.io/fridge-pick-support/assets/img/og-ru.jpg">
+<meta name="twitter:image:alt" content="Fridge Pick: что приготовить прямо сейчас? 28 быстрых блюд из того, что есть в холодильнике">
+<link rel="icon" href="/fridge-pick-support/favicon.ico" sizes="any">
+<link rel="icon" href="/fridge-pick-support/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/fridge-pick-support/apple-touch-icon.png">
+<link rel="stylesheet" href="/fridge-pick-support/assets/site.css?v=9f18d515">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://pavel-ship-it.github.io/fridge-pick-support/ru/"},{"@type":"ListItem","position":2,"name":"Руководство","item":"https://pavel-ship-it.github.io/fridge-pick-support/ru/manual/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Нужна ли учётная запись?","acceptedAnswer":{"@type":"Answer","text":"Нет. Регистрации и входа нет: откройте приложение и сразу пользуйтесь."}},{"@type":"Question","name":"Работает ли Fridge Pick без интернета?","acceptedAnswer":{"@type":"Answer","text":"Да. Все блюда, рецепты и фото встроены в приложение, и оно никогда не подключается к интернету. Сеть нужна только для установки и обновления из App Store или Google Play."}},{"@type":"Question","name":"Есть ли приложение на русском?","acceptedAnswer":{"@type":"Answer","text":"Пока нет: интерфейс приложения только на английском языке. Это руководство на русском объясняет все экраны и кнопки, а их названия приведены так, как они написаны в приложении."}},{"@type":"Question","name":"Почему на главном экране нет некоторых блюд?","acceptedAnswer":{"@type":"Answer","text":"Блюдо не показывается, если вы его скрыли, если в нём есть ваш аллерген (при включённой настройке Hide dishes with my allergens), если для него нужен исключённый продукт или если включён фильтр. Нажмите Clear filters, если ничего не найдено, и загляните во вкладки Settings → Menu: там видны все блюда и причина, по которой блюдо скрыто."}},{"@type":"Question","name":"Как вернуть скрытое блюдо?","acceptedAnswer":{"@type":"Answer","text":"Откройте Settings → Menu, вкладку Hidden, и нажмите Unhide рядом с блюдом. Сразу после скрытия можно нажать Undo."}},{"@type":"Question","name":"Что значит «Quick»?","acceptedAnswer":{"@type":"Answer","text":"Фильтр Quick показывает блюда, которые готовятся примерно за 5 минут или быстрее. Все 28 встроенных блюд готовятся не дольше 15 минут."}},{"@type":"Question","name":"Что означают метки «Never» и «Stale»?","acceptedAnswer":{"@type":"Answer","text":"Never — вы ещё ни разу не отмечали блюдо как приготовленное. Stale — в последний раз вы готовили его 5 или больше дней назад. Нажмите I made this на странице блюда, чтобы обновить отметку."}},{"@type":"Question","name":"Почему рецепты не используют микроволновку?","acceptedAnswer":{"@type":"Answer","text":"По умолчанию микроволновка выключена в Settings → Kitchen, поэтому рецепты используют плиту, пароварку, духовку, тостер или блендер. Её можно включить, но Fridge Pick всё равно выбирает другие способы, если подходящая техника есть."}},{"@type":"Question","name":"Насколько точны калории и пищевая ценность?","acceptedAnswer":{"@type":"Answer","text":"Это приблизительные значения на порцию для типичного варианта рецепта: калории, белки, углеводы и жиры. Ваша порция и продукты могут отличаться."}},{"@type":"Question","name":"Можно ли полагаться на отметки аллергенов?","acceptedAnswer":{"@type":"Answer","text":"Только на них полагаться не стоит. Отметки сделаны для удобства на основе типичных рецептов и могут быть неполными. Состав продуктов у разных производителей отличается, поэтому всегда проверяйте этикетки. Приложение не является медицинской консультацией."}},{"@type":"Question","name":"Можно ли перенести данные на другой телефон?","acceptedAnswer":{"@type":"Answer","text":"Учётных записей и синхронизации нет, поэтому холодильник, меню, списки и настройки остаются на устройстве, где вы их ввели. Резервная копия телефона (iCloud или Google) может включать данные приложений — это зависит от настроек системы."}},{"@type":"Question","name":"Как удалить свои данные?","acceptedAnswer":{"@type":"Answer","text":"Частично — в самом приложении: Clear all в My fridge, Clear week в меню на неделю, Reset в списке покупок. Чтобы удалить всё сразу, удалите приложение. На Android также можно открыть «Настройки» → «Приложения» → Fridge Pick → «Хранилище» → «Очистить хранилище»."}},{"@type":"Question","name":"Откуда фотографии блюд?","acceptedAnswer":{"@type":"Answer","text":"Большинство — с Wikimedia Commons по лицензиям Creative Commons, остальные с Unsplash. Авторы и лицензии указаны на странице Авторы фотографий."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Руководство Fridge Pick: как пользоваться приложением","description":"Пошаговое руководство по Fridge Pick: холодильник, фильтры, страница блюда, карточки рецептов, I’m hungry, меню на неделю, список покупок, аллергии, исключённые продукты, техника и FAQ.","inLanguage":"ru","url":"https://pavel-ship-it.github.io/fridge-pick-support/ru/manual/","dateModified":"2026-10-29","image":"https://pavel-ship-it.github.io/fridge-pick-support/assets/img/og-ru.jpg","author":{"@type":"Person","name":"Pavel Yakimenko"},"about":{"@id":"https://pavel-ship-it.github.io/fridge-pick-support/ru/#app"}}</script>
+</head>
+<body class="page-manual">
+<a class="skip" href="#main">Перейти к содержанию</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/fridge-pick-support/ru/"><img src="/fridge-pick-support/assets/img/icon-192.webp" width="36" height="36" alt=""><span>Fridge Pick</span></a>
+    <nav class="main-nav" aria-label="Основное меню">
+      <a href="/fridge-pick-support/ru/#features">Возможности</a>
+      <a href="/fridge-pick-support/ru/manual/" aria-current="page">Руководство</a>
+      <a href="/fridge-pick-support/ru/support">Поддержка</a>
+      <a class="lang" href="/fridge-pick-support/manual/" hreflang="en" lang="en" data-lang="en" title="This page in English">EN</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<nav class="wrap crumbs" aria-label="Навигационная цепочка"><ol>
+<li><a href="/fridge-pick-support/ru/">Главная</a></li>
+<li><span aria-current="page">Руководство</span></li>
+</ol></nav>
+
+<div class="wrap">
+<header class="narrow">
+  <h1>Руководство пользователя Fridge Pick</h1>
+  <p class="lead">Как пользоваться всеми возможностями Fridge Pick: Quick Meal Ideas на iPhone и Android, шаг за шагом.</p>
+  <p class="note"><strong>Интерфейс приложения пока только на английском языке.</strong> Названия кнопок и экранов написаны <span class="ui">вот так</span> — точно как в приложении, а рядом дан перевод.</p>
+</header>
+<div class="doc-layout">
+<nav class="toc" aria-labelledby="toc-h">
+  <h2 id="toc-h">Содержание</h2>
+  <ol>
+    <li><a href="#getting-started">Начало работы</a></li>
+    <li><a href="#home">Главный экран и карточки</a></li>
+    <li><a href="#filters">Фильтры</a></li>
+    <li><a href="#my-fridge">Мой холодильник</a></li>
+    <li><a href="#dish-page">Страница блюда</a></li>
+    <li><a href="#share">Карточка рецепта</a></li>
+    <li><a href="#favorites">Избранное</a></li>
+    <li><a href="#im-hungry">I’m hungry</a></li>
+    <li><a href="#week-plan">Меню на неделю</a></li>
+    <li><a href="#shopping-list">Список покупок</a></li>
+    <li><a href="#menu">Настройки: меню и свои блюда</a></li>
+    <li><a href="#kitchen">Настройки: кухня</a></li>
+    <li><a href="#allergies">Настройки: аллергии</a></li>
+    <li><a href="#excluded">Настройки: исключённые продукты</a></li>
+    <li><a href="#privacy-data">Данные и работа офлайн</a></li>
+    <li><a href="#faq">Частые вопросы</a></li>
+    <li><a href="#help">Нужна помощь?</a></li>
+  </ol>
+</nav>
+<article class="doc">
+
+<h2 id="getting-started">1. Начало работы</h2>
+<p>Установите Fridge Pick из App Store или Google Play и откройте. Регистрироваться не нужно, интернет тоже не нужен.</p>
+<ol class="how">
+  <li>При первом запуске появится экран <span class="ui">Welcome</span> с вопросом <span class="ui">Any food allergies?</span> («Есть пищевая аллергия?»). Отметьте все аллергены, которых избегаете, или нажмите <span class="ui">None</span> («Нет»).</li>
+  <li>Нажмите <span class="ui">Save and continue</span> («Сохранить и продолжить»). Изменить выбор можно в любой момент в <span class="ui">Settings → Allergies</span>.</li>
+  <li>Откроется главный экран со всеми блюдами. Хороший следующий шаг — открыть <a href="#my-fridge">My fridge</a> и отметить, что есть дома.</li>
+</ol>
+<p>Три значка справа вверху главного экрана открывают <span class="ui">My fridge</span> (холодильник), <span class="ui">Week plan</span> (меню на неделю, значок календаря) и <span class="ui">Settings</span> (настройки, значок с ползунками). Круглая кнопка <span class="ui">I’m hungry</span> («Я голоден») внизу подбирает блюдо.</p>
+
+<h2 id="home">2. Главный экран и карточки блюд</h2>
+<figure class="side-shot">
+<img src="/fridge-pick-support/assets/img/01_home-360.webp" srcset="/fridge-pick-support/assets/img/01_home-360.webp 360w, /fridge-pick-support/assets/img/01_home-720.webp 720w" sizes="(max-width: 600px) 70vw, 300px" width="360" height="720" alt="Главный экран: фильтры вверху, две колонки фото блюд с метками и подсказками, кнопка I’m hungry внизу" loading="lazy" decoding="async"><figcaption>Главный экран</figcaption>
+</figure>
+<p>На главном экране блюда показаны карточками с фото. Сначала идут блюда, которые вы ещё не готовили, затем те, что вы давно не ели, — так меню само собой остаётся разнообразным.</p>
+<p>На карточке может быть:</p>
+<ul>
+  <li><strong>название и время</strong>, например «~8 min»;</li>
+  <li><strong>когда вы ели его в последний раз</strong>: «never» (никогда), «today» (сегодня), «3 days ago» (3 дня назад);</li>
+  <li><strong>метка</strong> <span class="ui">Never</span> (ещё не готовили) или <span class="ui">Stale</span> (последний раз 5 и более дней назад);</li>
+  <li><strong>подсказка по холодильнику</strong>, если вы отметили продукты: <span class="ui">Can make now</span> (можно приготовить), <span class="ui">Missing: tomato</span> (не хватает помидора) или <span class="ui">You have 4/7</span> (есть 4 из 7);</li>
+  <li><strong>значки аллергенов</strong>; если в блюде есть ваш аллерген, у карточки красная рамка и предупреждение;</li>
+  <li><strong>сердечко</strong>, если блюдо в избранном.</li>
+</ul>
+<p><strong>Нажмите</strong> на карточку, чтобы открыть <a href="#dish-page">страницу блюда</a>. <strong>Долгое нажатие</strong> открывает быстрые действия: <span class="ui">Like</span> / <span class="ui">Unlike</span> (в избранное / убрать) и <span class="ui">Hide from menu</span> (скрыть). После скрытия можно нажать <span class="ui">Undo</span> («Отменить»), а позже вернуть блюдо в <a href="#menu">Settings → Menu</a>.</p>
+<div class="clear"></div>
+
+<h2 id="filters">3. Фильтры</h2>
+<p>Ряд кнопок-фильтров под заголовком прокручивается вбок. Фильтры сочетаются: например, <span class="ui">Favorites</span> + <span class="ui">Quick</span> покажет только избранные блюда, которые готовятся примерно за 5 минут.</p>
+<ul>
+  <li><span class="ui">Can make now</span> — только блюда, которые можно приготовить из продуктов в My fridge. Пока холодильник пуст, кнопка называется <span class="ui">From my fridge</span> и открывает My fridge для настройки.</li>
+  <li><span class="ui">Safe for me</span> («Безопасно для меня», появляется, если указаны аллергии) — скрывает блюда с вашими аллергенами и показывает, сколько скрыто. Выключите, чтобы увидеть их затемнёнными с предупреждением.</li>
+  <li><span class="ui">Without excluded</span> («Без исключённых», появляется, если вы исключили продукт) — скрывает блюда, для которых нужен исключённый продукт.</li>
+  <li><span class="ui">Favorites</span> — только избранные блюда. Если избранного ещё нет, приложение подскажет нажать сердечко на блюде.</li>
+  <li><span class="ui">Quick</span> — блюда примерно на 5 минут или быстрее.</li>
+  <li><span class="ui">Not eaten lately</span> — блюда, которые вы не готовили никогда или 5 и более дней.</li>
+  <li><span class="ui">Eggs</span>, <span class="ui">Dairy</span>, <span class="ui">Pantry</span>, <span class="ui">Produce</span>, <span class="ui">Protein</span> — группы продуктов (яйца, молочное, бакалея, овощи и фрукты, белок). Можно выбрать несколько: покажутся блюда из любой из них.</li>
+</ul>
+<p>Если ничего не найдено, нажмите <span class="ui">Clear filters</span> («Сбросить фильтры»).</p>
+
+<h2 id="my-fridge">4. Мой холодильник (My fridge)</h2>
+<figure class="side-shot">
+<img src="/fridge-pick-support/assets/img/07_my_fridge-360.webp" srcset="/fridge-pick-support/assets/img/07_my_fridge-360.webp 360w, /fridge-pick-support/assets/img/07_my_fridge-720.webp 720w" sizes="(max-width: 600px) 70vw, 300px" width="360" height="720" alt="Экран My fridge: строка «10 products · you can make 5 dishes now», поле поиска и продукты по группам Eggs, Dairy и Produce" loading="lazy" decoding="async"><figcaption>My fridge</figcaption>
+</figure>
+<p>My fridge — список продуктов, которые есть дома. Fridge Pick сравнивает его с ингредиентами каждого блюда и показывает, что можно приготовить прямо сейчас.</p>
+<h3>Как заполнить холодильник</h3>
+<ol class="how">
+  <li>Нажмите значок холодильника вверху главного экрана (или <span class="ui">Settings → My fridge</span>).</li>
+  <li>Нажмите на продукты, которые у вас есть. Они разбиты на группы Eggs, Dairy, Produce, Protein, Pantry и Other. Галочка означает, что продукт есть.</li>
+  <li>Не нашли продукт? Введите его в поле <span class="ui">Search or add a product</span>. Если его нет в списке, нажмите <span class="ui">Add “…”</span>, чтобы добавить свой.</li>
+  <li>Вверху видно, сколько у вас продуктов и сколько блюд можно приготовить сейчас.</li>
+</ol>
+<p><strong>Базовые продукты.</strong> Соль, перец, масло и вода считаются всегда имеющимися. Если что-то закончилось, нажмите на него в группе <span class="ui">Staples</span>, чтобы отметить отсутствие.</p>
+<p><strong>Необязательные добавки</strong>, например зелень сверху, никогда не считаются недостающими.</p>
+<p><strong>Начать заново.</strong> <span class="ui">Clear all</span> снимает все отметки (базовые продукты остаются). Если нажали случайно, нажмите <span class="ui">Undo</span>.</p>
+<p>Отмечать ингредиенты можно и на любой <a href="#dish-page">странице блюда</a> — они тоже сохраняются в My fridge.</p>
+<div class="clear"></div>
+
+<h2 id="dish-page">5. Страница блюда</h2>
+<figure class="side-shot">
+<img src="/fridge-pick-support/assets/img/02_recipe-360.webp" srcset="/fridge-pick-support/assets/img/02_recipe-360.webp 360w, /fridge-pick-support/assets/img/02_recipe-720.webp 720w" sizes="(max-width: 600px) 70vw, 300px" width="360" height="720" alt="Страница омлета: фото, «~8 min», «Stovetop · no microwave», «Last eaten: never», ингредиенты с галочками и кнопка I made this" loading="lazy" decoding="async"><figcaption>Страница блюда</figcaption>
+</figure>
+<p>Нажмите на любое блюдо, чтобы открыть его страницу. Сверху вниз на ней:</p>
+<ul>
+  <li><strong>Фото и краткие сведения</strong>: время, способ приготовления под вашу кухню (например, «Stovetop · no microwave» — на плите, без микроволновки, или «Steamed · steam over oven» — на пару вместо духовки), когда вы ели блюдо в последний раз, сколько раз готовили, группы продуктов.</li>
+  <li><strong>Предупреждения</strong>, если в блюде есть ваш аллерген или нужен исключённый продукт.</li>
+  <li><strong>Ingredients</strong> (ингредиенты) с галочками и счётчиком <span class="ui">You have 3/5</span> или <span class="ui">You have everything</span> («Всё есть»).</li>
+  <li><strong>Allergens</strong> — аллергены блюда. Аллергены необязательных добавок указаны отдельно.</li>
+  <li><strong>Nutrition (per serving)</strong> — примерные калории, белки, углеводы и жиры на порцию.</li>
+  <li><strong>Recipe</strong> — пронумерованные шаги для способа, подходящего вашей <a href="#kitchen">кухне</a>.</li>
+</ul>
+<h3>Отметьте, что есть, и докупите остальное</h3>
+<ol class="how">
+  <li>Нажмите на ингредиент, чтобы поставить галочку. Отметки сохраняются в My fridge.</li>
+  <li>Нажмите значок корзины рядом с недостающим ингредиентом, чтобы добавить его в <a href="#shopping-list">список покупок</a>. После этого появится надпись <span class="ui">On list</span> («В списке»).</li>
+  <li>Не хватает нескольких? Нажмите <span class="ui">Add N missing to shopping list</span>, чтобы добавить все сразу. Кнопка <span class="ui">Open</span> в уведомлении откроет список.</li>
+</ol>
+<h3>Отметьте, что приготовили</h3>
+<p>Когда блюдо готово, нажмите <span class="ui">I made this</span> внизу. Блюдо будет отмечено как съеденное сегодня, переместится в конец списка на главном экране, а метка <span class="ui">Never</span> / <span class="ui">Stale</span> исчезнет. Так Fridge Pick понимает, что вы давно не ели.</p>
+<h3>Другие действия</h3>
+<ul>
+  <li><strong>Сердечко</strong> (справа вверху): добавить в <a href="#favorites">избранное</a> или убрать.</li>
+  <li><strong>Поделиться</strong> (справа вверху): отправить <a href="#share">карточку рецепта</a>.</li>
+  <li><strong>Меню ⋮</strong>: <span class="ui">Exclude an ingredient…</span> (исключить продукт) и <span class="ui">Hide from menu</span> / <span class="ui">Unhide</span> (скрыть / вернуть).</li>
+  <li><strong>Долгое нажатие на ингредиент</strong> — <span class="ui">Never use</span> («Никогда не использовать»). См. <a href="#excluded">исключённые продукты</a>.</li>
+</ul>
+<div class="clear"></div>
+
+<h2 id="share">6. Карточка рецепта</h2>
+<figure class="side-shot">
+<img src="/fridge-pick-support/assets/img/share_card-360.webp" srcset="/fridge-pick-support/assets/img/share_card-360.webp 360w, /fridge-pick-support/assets/img/share_card-720.webp 720w" sizes="(max-width: 600px) 70vw, 300px" width="360" height="680" alt="Карточка рецепта омлета: фото, время, способ и калории, блок пищевой ценности, ингредиенты, шаги и подпись Fridge Pick с автором фото" loading="lazy" decoding="async"><figcaption>Карточка рецепта</figcaption>
+</figure>
+<p>Любое блюдо можно отправить другу красивой карточкой-картинкой, а вместе с ней — рецепт текстом.</p>
+<ol class="how">
+  <li>Откройте блюдо и нажмите значок «поделиться» (<span class="ui">Share recipe</span>) вверху.</li>
+  <li>Откроется системное меню «Поделиться». Выберите мессенджер, почту, заметки или сохраните картинку.</li>
+</ol>
+<p>На карточке есть фото и название блюда, время, способ приготовления, калории, пищевая ценность порции (приблизительно), все ингредиенты и все шаги. Длинный рецепт просто делает карточку выше — ничего не обрезается. Внизу подпись <em>Fridge Pick: Quick Meal Ideas</em>, ссылка на этот сайт, автор фото и лицензия.</p>
+<p>Шаги рецепта учитывают ваши <a href="#kitchen">настройки кухни</a>, как и на странице блюда.</p>
+<div class="clear"></div>
+
+<h2 id="favorites">7. Избранное</h2>
+<ol class="how">
+  <li>Нажмите сердечко на странице блюда или долго нажмите на карточку на главном экране и выберите <span class="ui">Like</span>.</li>
+  <li>У избранных блюд на карточке появится маленькое красное сердечко.</li>
+  <li>Включите фильтр <span class="ui">Favorites</span> на главном экране, чтобы видеть только их.</li>
+</ol>
+<p>Избранное учитывается и в <a href="#im-hungry">I’m hungry</a>: любимые блюда получают приоритет и подпись «You love this». Чтобы убрать блюдо из избранного, нажмите сердечко ещё раз или выберите <span class="ui">Unlike</span>.</p>
+
+<h2 id="im-hungry">8. I’m hungry — подбор блюда</h2>
+<figure class="side-shot">
+<img src="/fridge-pick-support/assets/img/03_im_hungry-360.webp" srcset="/fridge-pick-support/assets/img/03_im_hungry-360.webp 360w, /fridge-pick-support/assets/img/03_im_hungry-720.webp 720w" sizes="(max-width: 600px) 70vw, 300px" width="360" height="720" alt="I’m hungry, вопрос 1 из 4: How much time do you have? Варианты 5 min, 15 min и No rush, кнопка Skip" loading="lazy" decoding="async"><figcaption>Вопросы I’m hungry</figcaption>
+</figure>
+<p>Не знаете, что съесть? Нажмите <span class="ui">I’m hungry</span> внизу главного экрана и ответьте на четыре коротких вопроса. Любой можно пропустить кнопкой <span class="ui">Skip</span>.</p>
+<ol class="how">
+  <li><strong>How much time do you have?</strong> (Сколько у вас времени?) — 5 min, 15 min или No rush (не спешу).</li>
+  <li><strong>How hungry are you?</strong> (Насколько вы голодны?) — Just a snack (перекус, примерно до 300 ккал) или Proper meal (полноценная еда, от 300 ккал).</li>
+  <li><strong>What are you craving?</strong> (Чего хочется?) — Sweet (сладкое), Savory (несладкое), Protein-rich (побольше белка), Something light (что-то лёгкое) или Anything (что угодно).</li>
+  <li><strong>Use what you have?</strong> (Из того, что есть?) — <span class="ui">Use My fridge</span> поставит первыми блюда, которые можно приготовить сейчас; или выберите группы продуктов, которые есть под рукой. Затем нажмите <span class="ui">Show dishes</span>.</li>
+</ol>
+<p>Под заголовком <span class="ui">Try one of these</span> появятся 3–5 блюд с короткой причиной: «You have everything» (всё есть), «You love this» (вы это любите), «Haven’t had it in 9 days» (не ели 9 дней), «Ready in 5 min» (готово за 5 минут). Нажмите на блюдо, чтобы открыть рецепт. <span class="ui">Show other options</span> покажет другие варианты, <span class="ui">Start over</span> начнёт заново.</p>
+<p>В подборку никогда не попадают скрытые блюда, блюда с вашими аллергенами, блюда с исключёнными продуктами и блюда, которые нельзя приготовить на вашей технике. Если идеального совпадения нет, показываются ближайшие варианты с соответствующей пометкой.</p>
+<div class="clear"></div>
+
+<h2 id="week-plan">9. Меню на неделю (Week plan)</h2>
+<figure class="side-shot">
+<img src="/fridge-pick-support/assets/img/05_week_plan-360.webp" srcset="/fridge-pick-support/assets/img/05_week_plan-360.webp 360w, /fridge-pick-support/assets/img/05_week_plan-720.webp 720w" sizes="(max-width: 600px) 70vw, 300px" width="360" height="720" alt="Week plan: ближайшие 7 дней начиная с Today, до 3 блюд в день, кнопки добавления и удаления и кнопка Fill week" loading="lazy" decoding="async"><figcaption>Меню на неделю</figcaption>
+</figure>
+<p>Планируйте еду на 7 дней начиная с сегодняшнего, до 3 блюд в день. Дни можно оставлять пустыми.</p>
+<h3>Автоматическое заполнение</h3>
+<ol class="how">
+  <li>Нажмите значок календаря на главном экране, чтобы открыть <span class="ui">Week plan</span>.</li>
+  <li>Нажмите <span class="ui">Fill week</span> («Заполнить неделю»). Каждое нажатие добавляет ещё одно блюдо в каждый день, где есть место.</li>
+  <li>Нажмите ещё раз, чтобы было по два или три блюда в день.</li>
+</ol>
+<p>Fill week не трогает уже выбранные блюда, не ставит одно и то же блюдо дважды в один день, распределяет блюда по неделе и предпочитает те, что вы давно не ели. Используются только блюда, подходящие по аллергиям, исключённым продуктам и технике; скрытые блюда не используются.</p>
+<h3>Добавить или заменить блюдо вручную</h3>
+<ul>
+  <li>Нажмите <strong>+</strong> рядом с днём (<span class="ui">Add a dish</span>). Список отсортирован по тому, как давно вы ели блюдо.</li>
+  <li>Нажмите <strong>×</strong> рядом с блюдом, чтобы убрать его. Fridge Pick предложит три замены на этот день с подсказками вроде «Can make now» или «Never tried». Нажмите на одну из них, <span class="ui">Shuffle</span> — ещё три варианта, <span class="ui">Undo</span> — вернуть блюдо, или <span class="ui">No thanks</span>.</li>
+</ul>
+<h3>Очистить неделю</h3>
+<p>Откройте меню ⋮ и выберите <span class="ui">Clear week</span>, чтобы убрать все блюда на 7 дней.</p>
+<p><strong>Автоматическая очистка.</strong> Если вы скроете запланированное блюдо, добавите аллергию или исключите продукт, неподходящие блюда уберутся из меню при следующем открытии. Баннер сообщит, сколько блюд убрано; нажмите <span class="ui">Suggest replacements</span>, чтобы заполнить пропуски, или <span class="ui">Keep empty</span>, чтобы оставить пустыми.</p>
+<div class="clear"></div>
+
+<h2 id="shopping-list">10. Список покупок (Shopping list)</h2>
+<figure class="side-shot">
+<img src="/fridge-pick-support/assets/img/06_shopping_list-360.webp" srcset="/fridge-pick-support/assets/img/06_shopping_list-360.webp 360w, /fridge-pick-support/assets/img/06_shopping_list-720.webp 720w" sizes="(max-width: 600px) 70vw, 300px" width="360" height="720" alt="Список покупок: «0 of 22 checked · 17 already in fridge», продукты для запланированных блюд с галочками и кнопка Reset" loading="lazy" decoding="async"><figcaption>Список покупок</figcaption>
+</figure>
+<p>Список покупок собирается автоматически из меню на неделю и того, что вы добавили со страниц блюд. Откройте его значком корзины в <span class="ui">Week plan</span> или кнопкой <span class="ui">Open</span> после добавления ингредиента на странице блюда.</p>
+<ul>
+  <li><span class="ui">Added by you</span> — то, что вы добавили со страниц блюд. Нажмите ×, чтобы убрать.</li>
+  <li><span class="ui">For planned dishes</span> — все ингредиенты запланированных блюд, каждый один раз, с числом блюд, где он нужен.</li>
+  <li><span class="ui">Optional extras</span> — то, что во всех блюдах необязательно. Покупайте по желанию.</li>
+  <li><span class="ui">Already in fridge</span> — продукты, которые уже есть в My fridge; они вынесены отдельно, чтобы не купить их дважды.</li>
+</ul>
+<p>Ингредиенты блюд с вашими аллергенами и исключённые продукты в список не попадают. Если в строке есть варианты, например «Butter or oil» (масло сливочное или растительное), а сливочное вы исключили, в списке будет просто «Oil».</p>
+<h3>В магазине</h3>
+<ol class="how">
+  <li>Отмечайте продукты, когда кладёте их в корзину. Вверху видно, сколько отмечено.</li>
+  <li>Нажмите <span class="ui">Reset</span>, чтобы снять все отметки перед следующим походом.</li>
+</ol>
+<h3>Отправить список</h3>
+<p>Нажмите значок «поделиться» (<span class="ui">Share list</span>) вверху. Fridge Pick отправит неотмеченные продукты текстовым чек-листом (необязательные добавки отдельным блоком) — его удобно вставить в мессенджер или заметки.</p>
+<div class="clear"></div>
+
+<h2 id="menu">11. Настройки: меню и свои блюда</h2>
+<p>Откройте <span class="ui">Settings</span> (значок с ползунками) и нажмите <span class="ui">Menu</span>. Все блюда разложены по вкладкам:</p>
+<ul>
+  <li><span class="ui">All</span> — все блюда;</li>
+  <li><span class="ui">Mine</span> — блюда, которые вы добавили;</li>
+  <li><span class="ui">Hidden</span> — скрытые блюда; кнопка <span class="ui">Unhide</span> возвращает блюдо;</li>
+  <li><span class="ui">Allergies</span> — блюда, скрытые из-за ваших аллергенов;</li>
+  <li><span class="ui">Excluded</span> — блюда, для которых нужен исключённый продукт.</li>
+</ul>
+<p>Кнопка ⋮ рядом с блюдом позволяет добавить его в избранное или убрать и скрыть; свои блюда можно также редактировать и удалять.</p>
+<h3>Добавить своё блюдо</h3>
+<ol class="how">
+  <li>В <span class="ui">Settings → Menu</span> нажмите <span class="ui">Add dish</span>.</li>
+  <li>Введите название (<span class="ui">Name</span>) и, если хотите, время приготовления в минутах.</li>
+  <li>Выберите вкус (Sweet — сладкое или Savory — несладкое), группы продуктов и аллергены блюда.</li>
+  <li>Введите ингредиенты (<span class="ui">Ingredients</span>) через запятую, например «Bread, Peanut butter», и шаги (<span class="ui">Steps</span>) — каждый с новой строки.</li>
+  <li>Нажмите <span class="ui">Add dish</span> (или <span class="ui">Save</span>). Блюдо появится на главном экране, в подборках и в меню на неделю.</li>
+</ol>
+
+<h2 id="kitchen">12. Настройки: кухня (Kitchen)</h2>
+<p>Укажите, какая техника у вас есть, и рецепты подстроятся под неё. Откройте <span class="ui">Settings → Kitchen</span> и включите то, чем пользуетесь: <span class="ui">Stove</span> (плита), <span class="ui">Oven</span> (духовка), <span class="ui">Steam cooker</span> (пароварка), <span class="ui">Microwave</span> (микроволновка), <span class="ui">Toaster</span> (тостер), <span class="ui">Blender</span> (блендер).</p>
+<ul>
+  <li>Если блюдо можно приготовить разными способами, на странице и в карточке рецепта будет доступный вам способ. Какой именно, видно под названием блюда, например «Steamed · steam over oven».</li>
+  <li><span class="ui">Prefer steam cooker over oven</span> («Пароварка вместо духовки»): если подходят оба способа (яйца, рис с фасолью, овсянка…), выбирается приготовление на пару.</li>
+  <li>Микроволновка по умолчанию выключена и не используется, пока вы её не включите.</li>
+  <li>Блюда, которые нельзя приготовить на вашей технике, не попадают в подборки I’m hungry и в Fill week.</li>
+</ul>
+
+<h2 id="allergies">13. Настройки: аллергии (Allergies)</h2>
+<p>Выберите аллергены и непереносимости из 11 распространённых: Gluten (глютен), Dairy / lactose (молочное / лактоза), Eggs (яйца), Peanuts (арахис), Tree nuts (орехи), Soy (соя), Fish (рыба), Shellfish (морепродукты), Sesame (кунжут), Celery (сельдерей), Mustard (горчица).</p>
+<ol class="how">
+  <li>Откройте <span class="ui">Settings → Allergies</span>.</li>
+  <li>Отметьте всё, чего избегаете, или <span class="ui">None</span>.</li>
+  <li>Решите, включать ли <span class="ui">Hide dishes with my allergens</span> («Скрывать блюда с моими аллергенами»). Включено (по умолчанию): такие блюда исчезают с главного экрана. Выключено: они видны, но затемнены и с красным предупреждением.</li>
+  <li>Нажмите <span class="ui">Save</span>.</li>
+</ol>
+<p>В любом случае блюда с вашими аллергенами не предлагаются, не планируются и не попадают в список покупок. Если аллерген есть только в необязательной добавке, блюдо остаётся, а на странице будет подсказка эту добавку пропустить. Скрытие можно быстро переключать фильтром <span class="ui">Safe for me</span> на главном экране.</p>
+<p class="note">Информация об аллергенах дана для удобства на основе типичных рецептов и может быть неполной. Всегда проверяйте этикетки продуктов. Fridge Pick не является медицинской консультацией.</p>
+
+<h2 id="excluded">14. Настройки: исключённые продукты (Excluded ingredients)</h2>
+<p>Никогда не готовите с оливками, грибами или рыбой? Исключите их. В отличие от аллергии, исключённый продукт не считается опасным — просто вы не хотите его использовать.</p>
+<h3>Как исключить продукт</h3>
+<ol class="how">
+  <li>Откройте <span class="ui">Settings → Excluded ingredients</span>.</li>
+  <li>Найдите продукт или введите любой ингредиент в поле <span class="ui">Search or type an ingredient</span> и нажмите на него.</li>
+  <li>Или на странице блюда долго нажмите на ингредиент (либо ⋮ → <span class="ui">Exclude an ingredient…</span>) и выберите <span class="ui">Never use …</span>. Там же видно, для скольких блюд он нужен.</li>
+</ol>
+<ul>
+  <li>Блюда, для которых нужен исключённый продукт, не предлагаются, не планируются и не попадают в список покупок.</li>
+  <li>Если продукт — лишь необязательная добавка, блюдо остаётся, а добавка пропускается (в шаге рецепта написано «skip it» — «пропустите»).</li>
+  <li>Если в строке есть варианты, например «Butter or oil», блюдо готовится со вторым вариантом.</li>
+  <li>Некоторые слова охватывают целую группу: «fish» — это ещё и тунец, лосось и сардины; «cheese» — фета и моцарелла.</li>
+  <li><span class="ui">Hide those dishes on home</span> (включено по умолчанию) скрывает такие блюда с главного экрана; они остаются во вкладке <span class="ui">Excluded</span> в Menu. Это же переключает фильтр <span class="ui">Without excluded</span>.</li>
+  <li>Чтобы вернуть продукт, нажмите <span class="ui">Allow</span> рядом с ним или <span class="ui">Allow … again</span> на странице блюда.</li>
+</ul>
+
+<h2 id="privacy-data">15. Данные и работа офлайн</h2>
+<p>Fridge Pick полностью работает без интернета и никогда к нему не подключается. Учётной записи нет, и всё, что вы вводите (продукты, история блюд, избранное, меню, список покупок, аллергии, кухня и другие настройки), остаётся на устройстве.</p>
+<p>Чтобы удалить всё, удалите приложение. На Android также можно открыть «Настройки» → «Приложения» → Fridge Pick → «Хранилище» → «Очистить хранилище». Подробнее — в <a href="/fridge-pick-support/ru/privacy">политике конфиденциальности</a>.</p>
+
+<h2 id="faq">16. Частые вопросы</h2>
+
+<details class="faq" id="faq-account">
+  <summary>Нужна ли учётная запись?</summary>
+  <p>Нет. Регистрации и входа нет: откройте приложение и сразу пользуйтесь.</p>
+</details>
+
+<details class="faq" id="faq-offline">
+  <summary>Работает ли Fridge Pick без интернета?</summary>
+  <p>Да. Все блюда, рецепты и фото встроены в приложение, и оно никогда не подключается к интернету. Сеть нужна только для установки и обновления из App Store или Google Play.</p>
+</details>
+
+<details class="faq" id="faq-language">
+  <summary>Есть ли приложение на русском?</summary>
+  <p>Пока нет: интерфейс приложения только на английском языке. Это руководство на русском объясняет все экраны и кнопки, а их названия приведены так, как они написаны в приложении.</p>
+</details>
+
+<details class="faq" id="faq-missing-dishes">
+  <summary>Почему на главном экране нет некоторых блюд?</summary>
+  <p>Блюдо не показывается, если вы его скрыли, если в нём есть ваш аллерген (при включённой настройке <span class="ui">Hide dishes with my allergens</span>), если для него нужен исключённый продукт или если включён фильтр. Нажмите <span class="ui">Clear filters</span>, если ничего не найдено, и загляните во вкладки <span class="ui">Settings → Menu</span>: там видны все блюда и причина, по которой блюдо скрыто.</p>
+</details>
+
+<details class="faq" id="faq-unhide">
+  <summary>Как вернуть скрытое блюдо?</summary>
+  <p>Откройте <span class="ui">Settings → Menu</span>, вкладку <span class="ui">Hidden</span>, и нажмите <span class="ui">Unhide</span> рядом с блюдом. Сразу после скрытия можно нажать <span class="ui">Undo</span>.</p>
+</details>
+
+<details class="faq" id="faq-quick">
+  <summary>Что значит «Quick»?</summary>
+  <p>Фильтр <span class="ui">Quick</span> показывает блюда, которые готовятся примерно за 5 минут или быстрее. Все 28 встроенных блюд готовятся не дольше 15 минут.</p>
+</details>
+
+<details class="faq" id="faq-badges">
+  <summary>Что означают метки «Never» и «Stale»?</summary>
+  <p><span class="ui">Never</span> — вы ещё ни разу не отмечали блюдо как приготовленное. <span class="ui">Stale</span> — в последний раз вы готовили его 5 или больше дней назад. Нажмите <span class="ui">I made this</span> на странице блюда, чтобы обновить отметку.</p>
+</details>
+
+<details class="faq" id="faq-microwave">
+  <summary>Почему рецепты не используют микроволновку?</summary>
+  <p>По умолчанию микроволновка выключена в <span class="ui">Settings → Kitchen</span>, поэтому рецепты используют плиту, пароварку, духовку, тостер или блендер. Её можно включить, но Fridge Pick всё равно выбирает другие способы, если подходящая техника есть.</p>
+</details>
+
+<details class="faq" id="faq-nutrition">
+  <summary>Насколько точны калории и пищевая ценность?</summary>
+  <p>Это приблизительные значения на порцию для типичного варианта рецепта: калории, белки, углеводы и жиры. Ваша порция и продукты могут отличаться.</p>
+</details>
+
+<details class="faq" id="faq-allergens">
+  <summary>Можно ли полагаться на отметки аллергенов?</summary>
+  <p>Только на них полагаться не стоит. Отметки сделаны для удобства на основе типичных рецептов и могут быть неполными. Состав продуктов у разных производителей отличается, поэтому всегда проверяйте этикетки. Приложение не является медицинской консультацией.</p>
+</details>
+
+<details class="faq" id="faq-sync">
+  <summary>Можно ли перенести данные на другой телефон?</summary>
+  <p>Учётных записей и синхронизации нет, поэтому холодильник, меню, списки и настройки остаются на устройстве, где вы их ввели. Резервная копия телефона (iCloud или Google) может включать данные приложений — это зависит от настроек системы.</p>
+</details>
+
+<details class="faq" id="faq-delete">
+  <summary>Как удалить свои данные?</summary>
+  <p>Частично — в самом приложении: <span class="ui">Clear all</span> в My fridge, <span class="ui">Clear week</span> в меню на неделю, <span class="ui">Reset</span> в списке покупок. Чтобы удалить всё сразу, удалите приложение. На Android также можно открыть «Настройки» → «Приложения» → Fridge Pick → «Хранилище» → «Очистить хранилище».</p>
+</details>
+
+<details class="faq" id="faq-photos">
+  <summary>Откуда фотографии блюд?</summary>
+  <p>Большинство — с Wikimedia Commons по лицензиям Creative Commons, остальные с Unsplash. Авторы и лицензии указаны на странице <a href="/fridge-pick-support/ru/credits">Авторы фотографий</a>.</p>
+</details>
+
+
+<h2 id="help">17. Нужна помощь?</h2>
+<p>Напишите мне на <a href="mailto:dreamcomenull@gmail.com">dreamcomenull@gmail.com</a>. Укажите модель устройства, версию iOS или Android, версию приложения и опишите, что произошло. Ещё ответы — на странице <a href="/fridge-pick-support/ru/support">поддержки</a>.</p>
+</article>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand"><img src="/fridge-pick-support/assets/img/icon-192.webp" width="28" height="28" alt="" loading="lazy"> Fridge Pick: Quick Meal Ideas</p>
+      <p>Быстрые блюда из того, что есть в холодильнике. Работает без интернета, регистрация не нужна.</p>
+      <p>Вопросы или идеи? <a href="mailto:dreamcomenull@gmail.com">dreamcomenull@gmail.com</a></p>
+    </div>
+    <nav aria-label="Разделы сайта">
+      <ul>
+        <li><a href="/fridge-pick-support/ru/">Главная</a></li>
+        <li><a href="/fridge-pick-support/ru/manual/">Руководство</a></li>
+        <li><a href="/fridge-pick-support/ru/support">Поддержка</a></li>
+        <li><a href="/fridge-pick-support/ru/privacy">Политика конфиденциальности</a></li>
+        <li><a href="/fridge-pick-support/ru/terms">Условия использования</a></li>
+        <li><a href="/fridge-pick-support/ru/credits">Авторы фотографий</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="wrap copy">© 2026 Pavel Yakimenko · <a href="/fridge-pick-support/manual/" hreflang="en" lang="en" data-lang="en">English version</a></p>
+</footer>
+<script>
+(function(){try{
+document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){localStorage.setItem('fp_lang',a.getAttribute('data-lang'))})});
+var h=document.getElementById('lang-hint');
+if(h&&!localStorage.getItem('fp_lang')&&/^ru/i.test((navigator.languages&&navigator.languages[0])||navigator.language||'')){h.hidden=false;h.querySelector('[data-close]').onclick=function(){h.hidden=true;localStorage.setItem('fp_lang','en')}}
+}catch(e){}})();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% macro shot(name, alt, caption=None, cls='shot', eager=False, h_ratio=2) -%}
+<figure class="{{ cls }}">
+<img src="{{ rel('/assets/img/' ~ name ~ '-360.webp') }}" srcset="{{ rel('/assets/img/' ~ name ~ '-360.webp') }} 360w, {{ rel('/assets/img/' ~ name ~ '-720.webp') }} 720w" sizes="(max-width: 600px) 70vw, 300px" width="360" height="{{ (360 * h_ratio)|round|int }}" alt="{{ alt }}"{% if not eager %} loading="lazy" decoding="async"{% else %} fetchpriority="high"{% endif %}>
+{%- if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+</figure>
+{%- endmacro %}
+{% macro badges(stores, t) -%}
+<!-- STORE-BADGES:START  (store links come from site/config.json "stores"; empty = not public yet) -->
+{%- if stores.app_store or stores.google_play %}
+<div class="store-links">
+{%- if stores.app_store %}<a class="store-btn" href="{{ stores.app_store }}" rel="noopener"><span class="store-small">{{ t.badge_apple_small }}</span><span class="store-big">App Store</span></a>{% endif %}
+{%- if stores.google_play %}<a class="store-btn" href="{{ stores.google_play }}" rel="noopener"><span class="store-small">{{ t.badge_google_small }}</span><span class="store-big">Google Play</span></a>{% endif %}
+</div>
+{%- endif %}
+{%- if not (stores.app_store and stores.google_play) %}
+<p class="soon">{% if stores.app_store %}{{ t.soon_play }}{% elif stores.google_play %}{{ t.soon_apple }}{% else %}{{ t.soon_both }}{% endif %}</p>
+{%- endif %}
+<!-- STORE-BADGES:END -->
+{%- endmacro %}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="{{ abs(page.url) }}">
+{%- for l, u in page.alternates.items() %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ abs(u) }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ abs(page.alternates['en']) }}">
+<meta name="theme-color" content="#7be993">
+<meta name="author" content="Pavel Yakimenko">
+<meta name="robots" content="{{ page.robots or 'index, follow, max-image-preview:large' }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fridge Pick">
+<meta property="og:title" content="{{ page.og_title or page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ abs(page.url) }}">
+<meta property="og:image" content="{{ abs('/assets/img/og-' ~ lang ~ '.jpg') }}">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="{{ t.og_alt }}">
+<meta property="og:locale" content="{{ t.locale }}">
+<meta property="og:locale:alternate" content="{{ t.locale_alt }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.og_title or page.title }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="{{ abs('/assets/img/og-' ~ lang ~ '.jpg') }}">
+<meta name="twitter:image:alt" content="{{ t.og_alt }}">
+<link rel="icon" href="{{ rel('/favicon.ico') }}" sizes="any">
+<link rel="icon" href="{{ rel('/favicon.png') }}" type="image/png">
+<link rel="apple-touch-icon" href="{{ rel('/apple-touch-icon.png') }}">
+<link rel="stylesheet" href="{{ rel('/assets/site.css') }}?v={{ css_version }}">
+{%- for block in page.jsonld %}
+<script type="application/ld+json">{{ block }}</script>
+{%- endfor %}
+</head>
+<body class="page-{{ page.kind }}">
+<a class="skip" href="#main">{{ t.skip }}</a>
+{%- if lang == 'en' %}
+<div class="lang-hint" id="lang-hint" hidden lang="ru"><span>Эта страница есть на русском.</span> <a href="{{ rel(page.alternates['ru']) }}" data-lang="ru">Открыть по-русски</a> <button type="button" aria-label="Закрыть" data-close>×</button></div>
+{%- endif %}
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="{{ rel(t.home) }}"><img src="{{ rel('/assets/img/icon-192.webp') }}" width="36" height="36" alt=""><span>Fridge Pick</span></a>
+    <nav class="main-nav" aria-label="{{ t.nav_label }}">
+      <a href="{{ rel(t.home) }}#features">{{ t.nav_features }}</a>
+      <a href="{{ rel(t.manual) }}"{% if page.kind == 'manual' %} aria-current="page"{% endif %}>{{ t.nav_manual }}</a>
+      <a href="{{ rel(t.support) }}"{% if page.kind == 'support' %} aria-current="page"{% endif %}>{{ t.nav_support }}</a>
+      <a class="lang" href="{{ rel(page.alternates[t.other]) }}" hreflang="{{ t.other }}" lang="{{ t.other }}" data-lang="{{ t.other }}" title="{{ t.other_title }}">{{ t.other_label }}</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{%- if page.crumbs %}
+<nav class="wrap crumbs" aria-label="{{ t.crumbs_label }}"><ol>
+{%- for name, url in page.crumbs %}
+<li>{% if not loop.last %}<a href="{{ rel(url) }}">{{ name }}</a>{% else %}<span aria-current="page">{{ name }}</span>{% endif %}</li>
+{%- endfor %}
+</ol></nav>
+{%- endif %}
+{{ body }}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand"><img src="{{ rel('/assets/img/icon-192.webp') }}" width="28" height="28" alt="" loading="lazy"> Fridge Pick: Quick Meal Ideas</p>
+      <p>{{ t.footer_tagline }}</p>
+      <p>{{ t.footer_contact }} <a href="mailto:dreamcomenull@gmail.com">dreamcomenull@gmail.com</a></p>
+    </div>
+    <nav aria-label="{{ t.footer_nav }}">
+      <ul>
+        <li><a href="{{ rel(t.home) }}">{{ t.nav_home }}</a></li>
+        <li><a href="{{ rel(t.manual) }}">{{ t.nav_manual }}</a></li>
+        <li><a href="{{ rel(t.support) }}">{{ t.nav_support }}</a></li>
+        <li><a href="{{ rel(t.privacy) }}">{{ t.nav_privacy }}</a></li>
+        <li><a href="{{ rel(t.terms) }}">{{ t.nav_terms }}</a></li>
+        <li><a href="{{ rel(t.credits) }}">{{ t.nav_credits }}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="wrap copy">© 2026 Pavel Yakimenko · <a href="{{ rel(page.alternates[t.other]) }}" hreflang="{{ t.other }}" lang="{{ t.other }}" data-lang="{{ t.other }}">{{ t.other_name }}</a></p>
+</footer>
+<script>
+(function(){try{
+document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){localStorage.setItem('fp_lang',a.getAttribute('data-lang'))})});
+var h=document.getElementById('lang-hint');
+if(h&&!localStorage.getItem('fp_lang')&&/^ru/i.test((navigator.languages&&navigator.languages[0])||navigator.language||'')){h.hidden=false;h.querySelector('[data-close]').onclick=function(){h.hidden=true;localStorage.setItem('fp_lang','en')}}
+}catch(e){}})();
+</script>
+</body>
+</html>

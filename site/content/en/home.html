@@ -1,0 +1,104 @@
+{% from 'macros.html' import shot, badges %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">For iPhone &amp; Android</p>
+      <h1>What can I cook right now?</h1>
+      <p class="lead"><strong>Fridge Pick: Quick Meal Ideas</strong> helps you choose quick, simple dishes from the food you already have. Tick what’s in your fridge and see what you can make now, get suggestions when you’re hungry, plan your week and take a ready shopping list to the store.</p>
+      <ul class="pills" aria-label="At a glance">
+        <li>28 dishes in 15 min or less</li>
+        <li>Works fully offline</li>
+        <li>No account</li>
+        <li>No data collected</li>
+      </ul>
+      <div class="btns">
+        <a class="btn primary" href="{{ rel('/manual/') }}">Read the manual</a>
+        <a class="btn" href="#features">See features</a>
+      </div>
+      {{ badges(stores, t) }}
+    </div>
+    <div class="hero-shots">
+      {{ shot('07_my_fridge', 'My fridge screen: products grouped as Eggs, Dairy and Produce, with ticked items and a note “10 products · you can make 5 dishes now”', eager=True) }}
+      {{ shot('01_home', 'Fridge Pick home screen: a grid of dish photos with hints like “Can make now” and “You have 3/7”, filter chips on top and an I’m hungry button', eager=True) }}
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="helpbar" id="help">
+      <strong>Need help with the app?</strong>
+      <span>Email the developer: <a href="mailto:dreamcomenull@gmail.com">dreamcomenull@gmail.com</a></span>
+      <a href="{{ rel('/support') }}">Support &amp; FAQ</a>
+      <a href="{{ rel('/manual/') }}">User manual</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<section class="section narrow" aria-labelledby="about">
+  <h2 id="about">What is Fridge Pick?</h2>
+  <p>Fridge Pick is a small recipe and meal-planning app for the moment you open the fridge and don’t know what to eat. It comes with 28 quick dishes, from oatmeal, omelettes and toasties to Greek salad and salmon with rice, each ready in 15 minutes or less. Every dish has a photo, a step-by-step recipe, approximate nutrition per serving and its common allergens.</p>
+  <p>Tell the app which products you have, and it shows which dishes you can make right now and what’s missing. Tell it about your allergies, the ingredients you never cook with and the appliances in your kitchen, and it only suggests dishes that suit you. Everything happens on your phone: there is no account, no internet connection and no data collection.</p>
+</section>
+
+<section class="section" aria-labelledby="how">
+  <h2 id="how">How it works</h2>
+  <ol class="steps">
+    <li><strong>Tick what you have.</strong> Open <span class="ui">My fridge</span> and tap the products you have at home. Salt, pepper, oil and water count as always there.</li>
+    <li><strong>See what you can cook.</strong> Turn on <span class="ui">Can make now</span>, or look at the hint on each dish: “Can make now”, “Missing: tomato” or “You have 4/7”.</li>
+    <li><strong>Cook and remember.</strong> Follow the recipe, then tap <span class="ui">I made this</span>. Fridge Pick remembers when you last had each dish and mixes things up.</li>
+  </ol>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-h">
+  <h2 id="features-h">Features</h2>
+  <ul class="cards">
+    <li class="card"><span class="ico" aria-hidden="true">🧊</span><h3>My fridge</h3><p>Pick from more than 60 common products, search, or add your own. Fridge Pick counts how many dishes you can make now.</p><a class="more" href="{{ rel('/manual/') }}#my-fridge">How to use My fridge</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">⚡</span><h3>28 quick dishes</h3><p>Simple recipes for 15 minutes or less, with photos, ingredients, steps and nutrition per serving: calories, protein, carbs and fat.</p><a class="more" href="{{ rel('/manual/') }}#dish-page">About dish pages</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">🔎</span><h3>Handy filters</h3><p>Favorites, Quick (about 5 minutes), Not eaten lately, Can make now and food groups such as Eggs or Dairy. Combine them as you like.</p><a class="more" href="{{ rel('/manual/') }}#filters">All filters</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">🍽️</span><h3>I’m hungry</h3><p>Answer up to four quick questions (time, hunger, craving, your fridge) and get 3–5 dishes with a reason for each.</p><a class="more" href="{{ rel('/manual/') }}#im-hungry">Try I’m hungry</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">📅</span><h3>Week plan</h3><p>Plan the next 7 days with up to 3 dishes a day. <span class="ui">Fill week</span> adds a varied dish to every day; remove one and get 3 replacements.</p><a class="more" href="{{ rel('/manual/') }}#week-plan">Plan your week</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">🛒</span><h3>Shopping list</h3><p>Built from your week plan and the items you add from dish pages. Products already in your fridge are set aside. Share it as a text checklist.</p><a class="more" href="{{ rel('/manual/') }}#shopping-list">Shopping list guide</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">📤</span><h3>Share recipe cards</h3><p>Send any dish as a picture card with the photo, time, nutrition, ingredients and steps, plus the recipe as text.</p><a class="more" href="{{ rel('/manual/') }}#share">Share a recipe</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">🥜</span><h3>Allergies &amp; dislikes</h3><p>Choose from 11 common allergens and exclude any ingredient you never cook with. Unsuitable dishes are hidden or clearly marked.</p><a class="more" href="{{ rel('/manual/') }}#allergies">Set up allergies</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">♨️</span><h3>Fits your kitchen</h3><p>Stove, oven, steam cooker, microwave, toaster or blender: recipes switch to a method you can use. No microwave? It’s never suggested.</p><a class="more" href="{{ rel('/manual/') }}#kitchen">Kitchen settings</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">❤️</span><h3>Favorites &amp; your own dishes</h3><p>Heart the dishes you love, hide the ones you don’t, and add your own recipes with ingredients and steps.</p><a class="more" href="{{ rel('/manual/') }}#menu">Manage your menu</a></li>
+  </ul>
+</section>
+
+<section class="section" aria-labelledby="shots">
+  <h2 id="shots">Screenshots</h2>
+  <div class="gallery" tabindex="0" aria-label="Screenshots, scroll sideways">
+    {{ shot('01_home', 'Home screen with a grid of quick dishes, fridge hints and filter chips', 'Home: dishes and filters') }}
+    {{ shot('02_recipe', 'Omelette dish page: time, stovetop method, ingredients with checkboxes and the I made this button', 'Dish page with recipe') }}
+    {{ shot('03_im_hungry', 'I’m hungry question: How much time do you have? with 5 min, 15 min and No rush options', 'I’m hungry questions') }}
+    {{ shot('04_suggestions', 'Suggestions list “Try one of these” with reasons like “You have everything” and “Never tried yet”', 'Suggestions') }}
+    {{ shot('05_week_plan', 'Week plan for the next 7 days with up to 3 dishes per day and a Fill week button', 'Week plan') }}
+    {{ shot('06_shopping_list', 'Shopping list for planned dishes with checkboxes', 'Shopping list') }}
+    {{ shot('07_my_fridge', 'My fridge: search and product chips grouped by Eggs, Dairy and Produce', 'My fridge') }}
+  </div>
+</section>
+
+<section class="band narrow" aria-labelledby="private">
+  <h2 id="private">Private and offline by design</h2>
+  <ul class="checks">
+    <li>Works fully offline. All dishes, recipes and photos are built in, and the app never connects to the internet.</li>
+    <li>No account, sign-up or sign-in.</li>
+    <li>No analytics, ads or tracking. Your fridge, plan, lists and settings stay on your device.</li>
+  </ul>
+  <p>Read the <a href="{{ rel('/privacy') }}">Privacy Policy</a>.</p>
+</section>
+
+<section class="section narrow" aria-labelledby="good">
+  <h2 id="good">Good to know</h2>
+  <p><strong>Language.</strong> The app’s interface is in English. This website is also available <a href="{{ rel('/ru/') }}" hreflang="ru" lang="ru">на русском</a>.</p>
+  <p class="note"><strong>Allergen information is for convenience only</strong> and may be incomplete. Ingredients and brands vary, so always check product labels. Nutrition values are approximate.</p>
+</section>
+
+<section class="contact" id="support" aria-labelledby="support-h">
+  <h2 id="support-h">Support and contact</h2>
+  <p>Found a bug, have a question or an idea? Write to me, the developer, at <a href="mailto:dreamcomenull@gmail.com">dreamcomenull@gmail.com</a>. I reply to every message as soon as I can. Please include your device model, iOS or Android version and what happened; a screenshot helps a lot.</p>
+  <div class="btns">
+    <a class="btn" href="{{ rel('/support') }}">Support &amp; FAQ</a>
+    <a class="btn" href="{{ rel('/manual/') }}">User manual</a>
+  </div>
+</section>
+</div>

@@ -1,0 +1,105 @@
+{% from 'macros.html' import shot, badges %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Для iPhone и Android</p>
+      <h1>Что приготовить прямо сейчас?</h1>
+      <p class="lead"><strong>Fridge Pick: Quick Meal Ideas</strong> помогает выбрать быстрые и простые блюда из продуктов, которые уже есть дома. Отметьте, что лежит в холодильнике, и сразу увидите, что можно приготовить. Когда проголодаетесь, приложение подскажет блюдо, поможет составить меню на неделю и соберёт список покупок.</p>
+      <ul class="pills" aria-label="Коротко">
+        <li>28 блюд до 15 минут</li>
+        <li>Работает без интернета</li>
+        <li>Без регистрации</li>
+        <li>Не собирает данные</li>
+      </ul>
+      <div class="btns">
+        <a class="btn primary" href="{{ rel('/ru/manual/') }}">Руководство</a>
+        <a class="btn" href="#features">Возможности</a>
+      </div>
+      {{ badges(stores, t) }}
+    </div>
+    <div class="hero-shots">
+      {{ shot('07_my_fridge', 'Экран My fridge: продукты по группам Eggs, Dairy и Produce, отмеченные позиции и строка «10 products · you can make 5 dishes now»', eager=True) }}
+      {{ shot('01_home', 'Главный экран Fridge Pick: сетка фото блюд с подсказками «Can make now» и «You have 3/7», фильтры сверху и кнопка I’m hungry', eager=True) }}
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="helpbar" id="help">
+      <strong>Нужна помощь?</strong>
+      <span>Напишите разработчику: <a href="mailto:dreamcomenull@gmail.com">dreamcomenull@gmail.com</a></span>
+      <a href="{{ rel('/ru/support') }}">Поддержка и вопросы</a>
+      <a href="{{ rel('/ru/manual/') }}">Руководство</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<section class="section narrow" aria-labelledby="about">
+  <h2 id="about">Что такое Fridge Pick?</h2>
+  <p>Fridge Pick — небольшое приложение с рецептами и планом питания для того момента, когда вы открыли холодильник и не знаете, что съесть. В нём 28 быстрых блюд: от овсянки, омлета и горячих бутербродов до греческого салата и лосося с рисом, и каждое готовится не дольше 15 минут. У каждого блюда есть фото, пошаговый рецепт, примерная пищевая ценность порции и основные аллергены.</p>
+  <p>Отметьте, какие продукты у вас есть, и приложение покажет, что можно приготовить прямо сейчас и чего не хватает. Укажите аллергии, продукты, которые вы не едите, и технику на кухне, и Fridge Pick будет предлагать только подходящие блюда. Всё работает на телефоне: без учётной записи, без интернета и без сбора данных.</p>
+  <p class="note"><strong>Интерфейс приложения пока только на английском языке.</strong> Ниже названия кнопок и экранов приведены так, как они выглядят в приложении, например <span class="ui">My fridge</span> или <span class="ui">I’m hungry</span>.</p>
+</section>
+
+<section class="section" aria-labelledby="how">
+  <h2 id="how">Как это работает</h2>
+  <ol class="steps">
+    <li><strong>Отметьте продукты.</strong> Откройте <span class="ui">My fridge</span> («Мой холодильник») и нажмите на продукты, которые есть дома. Соль, перец, масло и воду приложение считает всегда имеющимися.</li>
+    <li><strong>Посмотрите, что можно приготовить.</strong> Включите фильтр <span class="ui">Can make now</span> («Можно приготовить») или смотрите подсказку на карточке: «Can make now», «Missing: tomato» (не хватает помидора) или «You have 4/7» (есть 4 из 7).</li>
+    <li><strong>Готовьте и отмечайте.</strong> Приготовьте по рецепту и нажмите <span class="ui">I made this</span> («Я это приготовил(а)»). Fridge Pick запомнит, когда вы ели блюдо в последний раз, и будет чередовать блюда.</li>
+  </ol>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-h">
+  <h2 id="features-h">Возможности</h2>
+  <ul class="cards">
+    <li class="card"><span class="ico" aria-hidden="true">🧊</span><h3>Мой холодильник</h3><p>Больше 60 распространённых продуктов, поиск и свои продукты. Приложение считает, сколько блюд можно приготовить прямо сейчас.</p><a class="more" href="{{ rel('/ru/manual/') }}#my-fridge">Как пользоваться</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">⚡</span><h3>28 быстрых блюд</h3><p>Простые рецепты до 15 минут с фото, ингредиентами, шагами и пищевой ценностью порции: калории, белки, углеводы и жиры.</p><a class="more" href="{{ rel('/ru/manual/') }}#dish-page">О странице блюда</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">🔎</span><h3>Удобные фильтры</h3><p>Избранное, быстрые (около 5 минут), давно не ели, можно приготовить сейчас и группы продуктов: яйца, молочное и другие. Фильтры сочетаются.</p><a class="more" href="{{ rel('/ru/manual/') }}#filters">Все фильтры</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">🍽️</span><h3>I’m hungry</h3><p>Ответьте на четыре коротких вопроса (время, голод, чего хочется, что есть дома) и получите 3–5 блюд с объяснением, почему они подходят.</p><a class="more" href="{{ rel('/ru/manual/') }}#im-hungry">Подробнее</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">📅</span><h3>Меню на неделю</h3><p>План на 7 дней, до 3 блюд в день. Кнопка <span class="ui">Fill week</span> добавляет разные блюда на каждый день, а при удалении блюда предлагаются 3 замены.</p><a class="more" href="{{ rel('/ru/manual/') }}#week-plan">Как составить меню</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">🛒</span><h3>Список покупок</h3><p>Собирается из меню на неделю и того, что вы добавили со страниц блюд. Продукты, которые уже есть, вынесены отдельно. Список можно отправить текстом.</p><a class="more" href="{{ rel('/ru/manual/') }}#shopping-list">О списке покупок</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">📤</span><h3>Карточки рецептов</h3><p>Отправьте любое блюдо картинкой с фото, временем, пищевой ценностью, ингредиентами и шагами, а вместе с ней и текст рецепта.</p><a class="more" href="{{ rel('/ru/manual/') }}#share">Как поделиться</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">🥜</span><h3>Аллергии и нелюбимые продукты</h3><p>11 распространённых аллергенов и любые исключённые продукты. Неподходящие блюда скрываются или явно помечаются.</p><a class="more" href="{{ rel('/ru/manual/') }}#allergies">Настроить аллергии</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">♨️</span><h3>Под вашу кухню</h3><p>Плита, духовка, пароварка, микроволновка, тостер или блендер: рецепт подстраивается под то, что у вас есть. Нет микроволновки — она не используется.</p><a class="more" href="{{ rel('/ru/manual/') }}#kitchen">Настройки кухни</a></li>
+    <li class="card"><span class="ico" aria-hidden="true">❤️</span><h3>Избранное и свои блюда</h3><p>Отмечайте любимые блюда сердечком, скрывайте ненужные и добавляйте свои рецепты с ингредиентами и шагами.</p><a class="more" href="{{ rel('/ru/manual/') }}#menu">Управление меню</a></li>
+  </ul>
+</section>
+
+<section class="section" aria-labelledby="shots">
+  <h2 id="shots">Скриншоты</h2>
+  <div class="gallery" tabindex="0" aria-label="Скриншоты, прокрутите в сторону">
+    {{ shot('01_home', 'Главный экран: сетка быстрых блюд, подсказки по холодильнику и фильтры', 'Главный экран и фильтры') }}
+    {{ shot('02_recipe', 'Страница омлета: время, способ на плите, ингредиенты с галочками и кнопка I made this', 'Страница блюда с рецептом') }}
+    {{ shot('03_im_hungry', 'Вопрос I’m hungry: How much time do you have? с вариантами 5 min, 15 min и No rush', 'Вопросы I’m hungry') }}
+    {{ shot('04_suggestions', 'Подборка «Try one of these» с причинами вроде «You have everything» и «Never tried yet»', 'Подсказки блюд') }}
+    {{ shot('05_week_plan', 'Меню на ближайшие 7 дней, до 3 блюд в день, и кнопка Fill week', 'Меню на неделю') }}
+    {{ shot('06_shopping_list', 'Список покупок для запланированных блюд с галочками', 'Список покупок') }}
+    {{ shot('07_my_fridge', 'My fridge: поиск и продукты по группам Eggs, Dairy и Produce', 'Мой холодильник') }}
+  </div>
+</section>
+
+<section class="band narrow" aria-labelledby="private">
+  <h2 id="private">Приватно и офлайн</h2>
+  <ul class="checks">
+    <li>Полностью работает без интернета. Все блюда, рецепты и фото встроены, приложение никогда не подключается к сети.</li>
+    <li>Без учётной записи, регистрации и входа.</li>
+    <li>Без аналитики, рекламы и отслеживания. Холодильник, меню, списки и настройки остаются на вашем устройстве.</li>
+  </ul>
+  <p>Подробнее в <a href="{{ rel('/ru/privacy') }}">политике конфиденциальности</a>.</p>
+</section>
+
+<section class="section narrow" aria-labelledby="good">
+  <h2 id="good">Полезно знать</h2>
+  <p><strong>Язык.</strong> Интерфейс приложения пока только на английском языке. <a href="{{ rel('/ru/manual/') }}">Руководство</a> на русском объясняет каждую кнопку.</p>
+  <p class="note"><strong>Информация об аллергенах дана для удобства</strong> и может быть неполной. Состав продуктов у разных производителей отличается, поэтому всегда проверяйте этикетки. Пищевая ценность указана приблизительно.</p>
+</section>
+
+<section class="contact" id="support" aria-labelledby="support-h">
+  <h2 id="support-h">Поддержка и связь</h2>
+  <p>Нашли ошибку, есть вопрос или идея? Напишите мне, разработчику, на <a href="mailto:dreamcomenull@gmail.com">dreamcomenull@gmail.com</a>. Я отвечаю на каждое письмо, как только появляется возможность. Укажите модель устройства, версию iOS или Android и опишите, что произошло; скриншот очень поможет.</p>
+  <div class="btns">
+    <a class="btn" href="{{ rel('/ru/support') }}">Поддержка и вопросы</a>
+    <a class="btn" href="{{ rel('/ru/manual/') }}">Руководство</a>
+  </div>
+</section>
+</div>

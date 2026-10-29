@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pavel-ship-it.github.io/fridge-pick-support/sitemap.xml

@@ -1,0 +1,67 @@
+[
+ {
+  "id": "faq-account",
+  "q": "Do I need an account to use Fridge Pick?",
+  "a": "<p>No. There is no sign-up or sign-in. Open the app and start using it right away.</p>"
+ },
+ {
+  "id": "faq-offline",
+  "q": "Does Fridge Pick work offline?",
+  "a": "<p>Yes. All dishes, recipes and photos are built into the app, and it never connects to the internet. You only need a connection to install or update it from the App Store or Google Play.</p>"
+ },
+ {
+  "id": "faq-language",
+  "q": "Which languages does the app support?",
+  "a": "<p>The interface is in English. This website is available in English and Russian.</p>"
+ },
+ {
+  "id": "faq-missing-dishes",
+  "q": "Why don’t I see some dishes on the home screen?",
+  "a": "<p>A dish is left out when you hid it, when it contains one of your allergens (with <span class=\"ui\">Hide dishes with my allergens</span> on), when it needs an ingredient you excluded, or when a filter is on. Tap <span class=\"ui\">Clear filters</span> if nothing matches, and check the tabs in <span class=\"ui\">Settings → Menu</span> to see every dish and why it isn’t shown.</p>"
+ },
+ {
+  "id": "faq-unhide",
+  "q": "How do I get a hidden dish back?",
+  "a": "<p>Open <span class=\"ui\">Settings → Menu</span>, go to the <span class=\"ui\">Hidden</span> tab and tap <span class=\"ui\">Unhide</span> next to the dish. Right after hiding a dish you can also tap <span class=\"ui\">Undo</span>.</p>"
+ },
+ {
+  "id": "faq-quick",
+  "q": "What counts as “Quick”?",
+  "a": "<p>The <span class=\"ui\">Quick</span> filter shows dishes that take about 5 minutes or less. All 28 built-in dishes take 15 minutes or less.</p>"
+ },
+ {
+  "id": "faq-badges",
+  "q": "What do the “Never” and “Stale” badges mean?",
+  "a": "<p><span class=\"ui\">Never</span> means you haven’t marked the dish as made yet. <span class=\"ui\">Stale</span> means you last made it 5 or more days ago. Tap <span class=\"ui\">I made this</span> on a dish page to update it.</p>"
+ },
+ {
+  "id": "faq-microwave",
+  "q": "Why don’t the recipes use a microwave?",
+  "a": "<p>The microwave is switched off in <span class=\"ui\">Settings → Kitchen</span> by default, so recipes use your stove, steam cooker, oven, toaster or blender instead. You can switch it on, but Fridge Pick still prefers other methods when you have the right appliance.</p>"
+ },
+ {
+  "id": "faq-nutrition",
+  "q": "How accurate are the calories and nutrition values?",
+  "a": "<p>They are approximate values per serving for a typical version of each recipe: calories, protein, carbs and fat. Your portion and products may differ.</p>"
+ },
+ {
+  "id": "faq-allergens",
+  "q": "Can I rely on the allergen labels?",
+  "a": "<p>Please don’t rely on them alone. Allergen markers are a convenience based on typical recipes and may be incomplete. Ingredients and brands vary, so always check the product labels. The app is not medical advice.</p>"
+ },
+ {
+  "id": "faq-sync",
+  "q": "Can I use my data on another phone?",
+  "a": "<p>There are no accounts and no sync, so your fridge, plan, lists and settings stay on the device where you entered them. Your phone’s own backup (iCloud or Google) may include app data, depending on your system settings.</p>"
+ },
+ {
+  "id": "faq-delete",
+  "q": "How do I delete my data?",
+  "a": "<p>You can clear parts of it in the app: <span class=\"ui\">Clear all</span> in My fridge, <span class=\"ui\">Clear week</span> in the week plan, <span class=\"ui\">Reset</span> in the shopping list. To delete everything at once, uninstall the app. On Android you can also use Settings → Apps → Fridge Pick → Storage → Clear storage.</p>"
+ },
+ {
+  "id": "faq-photos",
+  "q": "Where do the dish photos come from?",
+  "a": "<p>Most are from Wikimedia Commons under Creative Commons licenses, the rest from Unsplash. Authors and licenses are listed on the <a href=\"/fridge-pick-support/credits\">Photo Credits</a> page.</p>"
+ }
+]

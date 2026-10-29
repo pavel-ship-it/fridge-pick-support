@@ -1,0 +1,10 @@
+{
+  "base_url": "https://pavel-ship-it.github.io",
+  "base_path": "/fridge-pick-support",
+  "lastmod": "2026-10-29",
+  "stores": {
+    "app_store": null,
+    "google_play": null
+  },
+  "_stores_note": "Set app_store to https://apps.apple.com/app/id6828103127 and google_play to https://play.google.com/store/apps/details?id=com.py.fridgepick once each store page is live, then run: python3 site/build.py"
+}
