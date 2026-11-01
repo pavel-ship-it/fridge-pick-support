@@ -39,6 +39,7 @@ T = {
         badge_apple_small='Download on the', badge_google_small='Get it on',
         soon_both='Coming soon to the App Store and Google Play.', soon_play='Coming soon to Google Play.',
         soon_apple='Coming soon to the App Store.',
+        dev_url='https://pavel-ship-it.github.io/', dev_link='More apps by Pavel Yakimenko', dev_support='https://pavel-ship-it.github.io/support',
     ),
     'ru': dict(
         locale='ru_RU', locale_alt='en_US', other='en', other_label='EN', other_name='English version',
@@ -52,6 +53,7 @@ T = {
         og_alt='Fridge Pick: что приготовить прямо сейчас? 28 быстрых блюд из того, что есть в холодильнике',
         badge_apple_small='Загрузите в', badge_google_small='Доступно в',
         soon_both='Скоро в App Store и Google Play.', soon_play='Скоро в Google Play.', soon_apple='Скоро в App Store.',
+        dev_url='https://pavel-ship-it.github.io/ru/', dev_link='Другие приложения Pavel Yakimenko', dev_support='https://pavel-ship-it.github.io/ru/support',
     ),
 }
 
