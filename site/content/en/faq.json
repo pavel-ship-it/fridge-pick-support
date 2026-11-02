@@ -27,7 +27,7 @@
  {
   "id": "faq-quick",
   "q": "What counts as “Quick”?",
-  "a": "<p>The <span class=\"ui\">Quick</span> filter shows dishes that take about 5 minutes or less. All 34 built-in dishes take 15 minutes or less.</p>"
+  "a": "<p>The <span class=\"ui\">Quick</span> filter shows dishes that take about 5 minutes or less. All built-in dishes take 15 minutes or less.</p>"
  },
  {
   "id": "faq-badges",
