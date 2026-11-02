@@ -35,7 +35,7 @@ T = {
         home='/', manual='/manual/', support='/support', privacy='/privacy', terms='/terms', credits='/credits',
         footer_tagline='Quick meal ideas from what’s in your fridge. Works offline, no account needed.',
         footer_contact='Questions or ideas?',
-        og_alt='Fridge Pick: What can I cook right now? 28 quick dishes from what’s in your fridge',
+        og_alt='Fridge Pick: What can I cook right now? 34 quick dishes from what’s in your fridge',
         badge_apple_small='Download on the', badge_google_small='Get it on',
         soon_both='Coming soon to the App Store and Google Play.', soon_play='Coming soon to Google Play.',
         soon_apple='Coming soon to the App Store.',
@@ -50,7 +50,7 @@ T = {
         home='/ru/', manual='/ru/manual/', support='/ru/support', privacy='/ru/privacy', terms='/ru/terms', credits='/ru/credits',
         footer_tagline='Быстрые блюда из того, что есть в холодильнике. Работает без интернета, регистрация не нужна.',
         footer_contact='Вопросы или идеи?',
-        og_alt='Fridge Pick: что приготовить прямо сейчас? 28 быстрых блюд из того, что есть в холодильнике',
+        og_alt='Fridge Pick: что приготовить прямо сейчас? 34 быстрых блюд из того, что есть в холодильнике',
         badge_apple_small='Загрузите в', badge_google_small='Доступно в',
         soon_both='Скоро в App Store и Google Play.', soon_play='Скоро в Google Play.', soon_apple='Скоро в App Store.',
         dev_url='https://pavel-ship-it.github.io/ru/', dev_link='Другие приложения Pavel Yakimenko', dev_support='https://pavel-ship-it.github.io/ru/support',
@@ -67,7 +67,7 @@ PAGES = {
     'en': {
         'home': dict(title='Fridge Pick: Quick Meal Ideas from What’s in Your Fridge (iPhone & Android)',
                      og_title='Fridge Pick: Quick Meal Ideas',
-                     description='Tick what’s in your fridge and see what you can cook right now. 28 quick recipes (15 min or less), I’m hungry suggestions, a week plan and a shopping list. Offline, no account.'),
+                     description='Tick what’s in your fridge and see what you can cook right now. 34 quick recipes (15 min or less), I’m hungry suggestions, a week plan and a shopping list. Offline, no account.'),
         'manual': dict(title='Fridge Pick User Manual: How to Use Every Feature', crumb='User manual',
                        description='Step-by-step guide to Fridge Pick: My fridge, filters, dish pages, sharing recipe cards, I’m hungry, week plan, shopping list, allergies, excluded ingredients, kitchen settings and FAQ.'),
         'support': dict(title='Support – Fridge Pick', crumb='Support',
@@ -82,7 +82,7 @@ PAGES = {
     'ru': {
         'home': dict(title='Fridge Pick — что приготовить из того, что есть в холодильнике (iPhone и Android)',
                      og_title='Fridge Pick — быстрые блюда из холодильника',
-                     description='Отметьте продукты в холодильнике и узнайте, что приготовить прямо сейчас. 28 быстрых рецептов до 15 минут, подсказки, меню на неделю и список покупок. Без интернета и регистрации.'),
+                     description='Отметьте продукты в холодильнике и узнайте, что приготовить прямо сейчас. 34 быстрых рецептов до 15 минут, подсказки, меню на неделю и список покупок. Без интернета и регистрации.'),
         'manual': dict(title='Руководство Fridge Pick: как пользоваться приложением', crumb='Руководство',
                        description='Пошаговое руководство по Fridge Pick: холодильник, фильтры, страница блюда, карточки рецептов, I’m hungry, меню на неделю, список покупок, аллергии, исключённые продукты, техника и FAQ.'),
         'support': dict(title='Поддержка – Fridge Pick', crumb='Поддержка',
@@ -207,7 +207,7 @@ def main():
 def home_ld(lang, t, page):
     en = lang == 'en'
     feats_en = ['My fridge: tick the products you have and see dishes you can make now',
-                '28 quick dishes, 15 minutes or less, with photos, recipes and nutrition per serving',
+                '34 quick dishes, 15 minutes or less, with photos, recipes and nutrition per serving',
                 "I'm hungry: answer a few quick questions and get 3–5 dish suggestions",
                 'Week plan for the next 7 days with Fill week and replacement suggestions',
                 'Shopping list built from your week plan, shareable as text',
@@ -216,7 +216,7 @@ def home_ld(lang, t, page):
                 'Recipes adapt to your kitchen appliances',
                 'Favorites, your own dishes, works fully offline with no account']
     feats_ru = ['Мой холодильник: отметьте продукты и посмотрите, что можно приготовить сейчас',
-                '28 быстрых блюд до 15 минут с фото, рецептами и пищевой ценностью порции',
+                '34 быстрых блюд до 15 минут с фото, рецептами и пищевой ценностью порции',
                 'I’m hungry: несколько быстрых вопросов и 3–5 подходящих блюд',
                 'Меню на 7 дней с автозаполнением и подсказками замен',
                 'Список покупок из меню на неделю, можно отправить текстом',

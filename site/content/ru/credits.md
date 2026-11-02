@@ -37,6 +37,12 @@ alt_url: /credits
 | `berry_kefir_smoothie.jpg` | [2011.09 smoothie2.JPG](https://commons.wikimedia.org/wiki/File:2011.09_smoothie2.JPG) | Sigurdas | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | `tomato_mozzarella_toast.jpg` | [Mmm...fresh mozz on a tomato basil sammich (4812541121).jpg](https://commons.wikimedia.org/wiki/File:Mmm...fresh_mozz_on_a_tomato_basil_sammich_(4812541121).jpg) | jeffreyw | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
 | `sardines_on_toast.jpg` | [Sardines et pain grillé 01.jpg](https://commons.wikimedia.org/wiki/File:Sardines_et_pain_grill%C3%A9_01.jpg) | Arnaud 25 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| `beef_broccoli_stir_fry.jpg` | [Beef and broccoli stir fry.jpg](https://commons.wikimedia.org/wiki/File:Beef_and_broccoli_stir_fry.jpg) | Joy | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+| `steak_salad.jpg` | [Steak and salad - Massachusetts.jpg](https://commons.wikimedia.org/wiki/File:Steak_and_salad_-_Massachusetts.jpg) | Daderot | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| `turkey_wrap.jpg` | [Turkey wrap from Spangles restaurant.jpg](https://commons.wikimedia.org/wiki/File:Turkey_wrap_from_Spangles_restaurant.jpg) | Ser Amantio di Nicolao | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| `turkey_tacos.jpg` | [Tacos with ground turkey - May 2023 - Sarah Stierch.jpg](https://commons.wikimedia.org/wiki/File:Tacos_with_ground_turkey_-_May_2023_-_Sarah_Stierch.jpg) | Missvain | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| `chicken_stir_fry.jpg` | [MP - chicken stir fry 2.jpg](https://commons.wikimedia.org/wiki/File:MP_-_chicken_stir_fry_2.jpg) | Mark Pellegrini | [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/) |
+| `chicken_caesar_wrap.jpg` | [Wegmans Chicken Caesar Wheat Wrap.jpeg](https://commons.wikimedia.org/wiki/File:Wegmans_Chicken_Caesar_Wheat_Wrap.jpeg) | Dough4872 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 
 Три более ранние фотографии взяты с [Unsplash](https://unsplash.com) и используются по [лицензии Unsplash](https://unsplash.com/license):
 
