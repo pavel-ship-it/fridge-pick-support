@@ -32,7 +32,7 @@
 <link rel="icon" href="/fridge-pick-support/favicon.ico" sizes="any">
 <link rel="icon" href="/fridge-pick-support/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/fridge-pick-support/apple-touch-icon.png">
-<link rel="stylesheet" href="/fridge-pick-support/assets/site.css?v=9f18d515">
+<link rel="stylesheet" href="/fridge-pick-support/assets/site.css?v=17b0eec3">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://pavel-ship-it.github.io/fridge-pick-support/#website","name":"Fridge Pick","url":"https://pavel-ship-it.github.io/fridge-pick-support/","inLanguage":["en","ru"],"publisher":{"@type":"Person","name":"Pavel Yakimenko"}},{"@type":"MobileApplication","@id":"https://pavel-ship-it.github.io/fridge-pick-support/#app","name":"Fridge Pick: Quick Meal Ideas","alternateName":"Fridge Pick","description":"Tick what’s in your fridge and see what you can cook right now. Quick recipes (15 min or less), I’m hungry suggestions, a week plan and a shopping list. Offline, no account.","url":"https://pavel-ship-it.github.io/fridge-pick-support/","operatingSystem":"iOS, Android","applicationCategory":"LifestyleApplication","applicationSubCategory":"Food & Drink","softwareVersion":"1.0.0","image":"https://pavel-ship-it.github.io/fridge-pick-support/assets/img/icon-512.jpg","screenshot":["https://pavel-ship-it.github.io/fridge-pick-support/assets/img/01_home-720.webp","https://pavel-ship-it.github.io/fridge-pick-support/assets/img/02_recipe-720.webp","https://pavel-ship-it.github.io/fridge-pick-support/assets/img/03_im_hungry-720.webp","https://pavel-ship-it.github.io/fridge-pick-support/assets/img/05_week_plan-720.webp","https://pavel-ship-it.github.io/fridge-pick-support/assets/img/06_shopping_list-720.webp","https://pavel-ship-it.github.io/fridge-pick-support/assets/img/07_my_fridge-720.webp"],"featureList":["My fridge: tick the products you have and see dishes you can make now","Quick dishes, 15 minutes or less, with photos, recipes and nutrition per serving","I'm hungry: answer a few quick questions and get 3–5 dish suggestions","Week plan for the next 7 days with Fill week and replacement suggestions","Shopping list built from your week plan, shareable as text","Share any recipe as an image card","Allergy filters (11 common allergens) and excluded ingredients","Recipes adapt to your kitchen appliances","Favorites, your own dishes, works fully offline with no account"],"author":{"@type":"Person","name":"Pavel Yakimenko","email":"mailto:dreamcomenull@gmail.com"},"publisher":{"@type":"Person","name":"Pavel Yakimenko"},"inLanguage":"en"}]}</script>
 </head>
 <body class="page-home">
@@ -45,7 +45,7 @@
       <a href="/fridge-pick-support/#features">Features</a>
       <a href="/fridge-pick-support/manual/">Manual</a>
       <a href="/fridge-pick-support/support">Support</a>
-      <a class="lang" href="/fridge-pick-support/ru/" hreflang="ru" lang="ru" data-lang="ru" title="Эта страница по-русски">RU</a>
+      <details class="lsw"><summary aria-haspopup="true" aria-label="Language: English" title="Language"><svg class="lsw-flag" viewBox="0 0 60 30" aria-hidden="true" focusable="false"><clipPath id="lswuk1s"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><path d="M0,0v30h60v-30z" fill="#012169"/><path d="M0,0 60,30M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30M60,0 0,30" clip-path="url(#lswuk1s)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></svg><span class="lsw-code">EN</span><svg class="lsw-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><ul class="lsw-menu"><li><a href="/fridge-pick-support/" hreflang="en" lang="en" data-lang="en" aria-current="true"><svg class="lsw-flag" viewBox="0 0 60 30" aria-hidden="true" focusable="false"><clipPath id="lswuk1en"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><path d="M0,0v30h60v-30z" fill="#012169"/><path d="M0,0 60,30M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30M60,0 0,30" clip-path="url(#lswuk1en)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></svg><span>English</span><svg class="lsw-check" viewBox="0 0 12 10" aria-hidden="true" focusable="false"><path d="M1 5l3.5 3.5L11 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a href="/fridge-pick-support/ru/" hreflang="ru" lang="ru" data-lang="ru"><svg class="lsw-flag" viewBox="0 0 9 6" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h9v2H0z"/><path fill="#0039A6" d="M0 2h9v2H0z"/><path fill="#D52B1E" d="M0 4h9v2H0z"/></svg><span>Русский</span></a></li></ul></details>
     </nav>
   </div>
 </header>
@@ -203,5 +203,15 @@ var h=document.getElementById('lang-hint');
 if(h&&!localStorage.getItem('fp_lang')&&/^ru/i.test((navigator.languages&&navigator.languages[0])||navigator.language||'')){h.hidden=false;h.querySelector('[data-close]').onclick=function(){h.hidden=true;localStorage.setItem('fp_lang','en')}}
 }catch(e){}})();
 </script>
+<script>(function(){try{var ds=[].slice.call(document.querySelectorAll('details.lsw'));if(!ds.length)return;
+ds.forEach(function(d){var s=d.querySelector('summary'),ls=[].slice.call(d.querySelectorAll('.lsw-menu a')),k=d.getAttribute('data-lsw-key');
+function sync(){s.setAttribute('aria-expanded',d.open?'true':'false')}sync();d.addEventListener('toggle',sync);
+d.addEventListener('keydown',function(e){var i=ls.indexOf(document.activeElement);
+if(e.key==='Escape'||e.key==='Esc'){if(d.open){d.open=false;sync();s.focus();e.preventDefault()}}
+else if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(!d.open){d.open=true;sync()}var n=i<0?(e.key==='ArrowDown'?0:ls.length-1):(i+(e.key==='ArrowDown'?1:-1)+ls.length)%ls.length;ls[n].focus()}
+else if((e.key==='Home'||e.key==='End')&&i>=0){e.preventDefault();ls[e.key==='Home'?0:ls.length-1].focus()}});
+d.addEventListener('focusout',function(e){if(d.open&&e.relatedTarget&&!d.contains(e.relatedTarget)){d.open=false;sync()}});
+if(k)ls.forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem(k,a.getAttribute('data-lang'))}catch(x){}})})});
+document.addEventListener('click',function(e){ds.forEach(function(d){if(d.open&&!d.contains(e.target)){d.open=false;d.querySelector('summary').setAttribute('aria-expanded','false')}})})}catch(x){}})();</script>
 </body>
 </html>

@@ -8,6 +8,8 @@ Needs: jinja2, markdown  (pip install jinja2 markdown)
 import json, os, re, shutil, hashlib, html
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
+import sys as _sys; _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import langmenu
 import markdown
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -128,6 +130,7 @@ def main():
                       autoescape=select_autoescape(['html']), trim_blocks=False, lstrip_blocks=False)
     css = open(os.path.join(HERE, 'assets', 'site.css'), 'rb').read()
     g = dict(rel=rel, abs=abs_, stores=STORES, css_version=hashlib.md5(css).hexdigest()[:8])
+    env.globals.update(lang_menu=lambda cur, alt: Markup(langmenu.html(cur, {l: rel(u) for l, u in alt.items()})), lang_js=Markup(langmenu.JS))
     env.globals.update(g)
 
     # fresh output (keep nothing stale)
