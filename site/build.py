@@ -30,7 +30,7 @@ def abs_(u):
 
 T = {
     'en': dict(
-        locale='en_US', locale_alt='ru_RU', other='ru', other_label='RU', other_name='Русская версия',
+        locale='en_US', locale_alt='ru_RU', other='ru', other_label='RU', other_name='Русский',
         other_title='Эта страница по-русски', skip='Skip to content', nav_label='Main', footer_nav='Site',
         crumbs_label='Breadcrumb', nav_home='Home', nav_features='Features', nav_manual='Manual',
         nav_support='Support', nav_privacy='Privacy Policy', nav_terms='Terms of Use', nav_credits='Photo Credits',

@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
+<script>(function(){try{if(localStorage.getItem('fp_lang'))return;if(document.documentElement.lang!=='en')return;var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';if(/^ru/i.test(l))location.replace("/fridge-pick-support/ru/terms"+location.hash)}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="_RdaR0_BMaKP4RMxZif1t7XZgAn1ZDi24w5fRZQRDhc" />
 <title>Условия использования – Fridge Pick</title>
@@ -102,8 +103,6 @@
 <script>
 (function(){try{
 document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){localStorage.setItem('fp_lang',a.getAttribute('data-lang'))})});
-var h=document.getElementById('lang-hint');
-if(h&&!localStorage.getItem('fp_lang')&&/^ru/i.test((navigator.languages&&navigator.languages[0])||navigator.language||'')){h.hidden=false;h.querySelector('[data-close]').onclick=function(){h.hidden=true;localStorage.setItem('fp_lang','en')}}
 }catch(e){}})();
 </script>
 <script>(function(){try{var ds=[].slice.call(document.querySelectorAll('details.lsw'));if(!ds.length)return;

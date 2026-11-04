@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>(function(){try{if(localStorage.getItem('fp_lang'))return;if(document.documentElement.lang!=='en')return;var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';if(/^ru/i.test(l))location.replace("/fridge-pick-support/ru/terms"+location.hash)}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="_RdaR0_BMaKP4RMxZif1t7XZgAn1ZDi24w5fRZQRDhc" />
 <title>Terms of Use – Fridge Pick</title>
@@ -37,7 +38,6 @@
 </head>
 <body class="page-terms">
 <a class="skip" href="#main">Skip to content</a>
-<div class="lang-hint" id="lang-hint" hidden lang="ru"><span>Эта страница есть на русском.</span> <a href="/fridge-pick-support/ru/terms" data-lang="ru">Открыть по-русски</a> <button type="button" aria-label="Закрыть" data-close>×</button></div>
 <header class="site-header">
   <div class="wrap header-row">
     <a class="brand" href="/fridge-pick-support/"><img src="/fridge-pick-support/assets/img/icon-192.webp" width="36" height="36" alt=""><span>Fridge Pick</span></a>
@@ -98,13 +98,11 @@ Effective date: 27 October 2026</p>
       </ul>
     </nav>
   </div>
-  <p class="wrap copy">© 2026 <a href="https://pavel-ship-it.github.io/">Pavel Yakimenko</a> · <a href="/fridge-pick-support/ru/terms" hreflang="ru" lang="ru" data-lang="ru">Русская версия</a></p>
+  <p class="wrap copy">© 2026 <a href="https://pavel-ship-it.github.io/">Pavel Yakimenko</a> · <a href="/fridge-pick-support/ru/terms" hreflang="ru" lang="ru" data-lang="ru">Русский</a></p>
 </footer>
 <script>
 (function(){try{
 document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){localStorage.setItem('fp_lang',a.getAttribute('data-lang'))})});
-var h=document.getElementById('lang-hint');
-if(h&&!localStorage.getItem('fp_lang')&&/^ru/i.test((navigator.languages&&navigator.languages[0])||navigator.language||'')){h.hidden=false;h.querySelector('[data-close]').onclick=function(){h.hidden=true;localStorage.setItem('fp_lang','en')}}
 }catch(e){}})();
 </script>
 <script>(function(){try{var ds=[].slice.call(document.querySelectorAll('details.lsw'));if(!ds.length)return;
