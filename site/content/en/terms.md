@@ -2,7 +2,6 @@
 title: Terms of Use
 layout: default
 lang: en
-alt_url: /ru/terms
 ---
 
 # Terms of Use

@@ -2,7 +2,6 @@
 title: Photo Credits
 layout: default
 lang: en
-alt_url: /ru/credits
 ---
 
 # Photo Credits

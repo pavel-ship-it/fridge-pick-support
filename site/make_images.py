@@ -20,5 +20,4 @@ icon.resize((512, 512), Image.LANCZOS).save(f'{OUT}/icon-512.jpg', 'JPEG', quali
 icon.resize((180, 180), Image.LANCZOS).save(f'{OUT}/../../apple-touch-icon.png', optimize=True)
 icon.resize((32, 32), Image.LANCZOS).save(f'{OUT}/../../favicon.png', optimize=True)
 icon.resize((48, 48), Image.LANCZOS).save(f'{OUT}/../../favicon.ico', sizes=[(16, 16), (32, 32), (48, 48)])
-for lang in ('en', 'ru'):
-    Image.open(f'{S}/play/feature_graphic_{lang}.png').convert('RGB').save(f'{OUT}/og-{lang}.jpg', 'JPEG', quality=85, optimize=True, progressive=True)
+Image.open(f'{S}/play/feature_graphic_en.png').convert('RGB').save(f'{OUT}/og-en.jpg', 'JPEG', quality=85, optimize=True, progressive=True)

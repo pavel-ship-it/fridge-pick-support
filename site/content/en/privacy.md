@@ -2,7 +2,6 @@
 title: Privacy Policy
 layout: default
 lang: en
-alt_url: /ru/privacy
 ---
 
 # Privacy Policy
