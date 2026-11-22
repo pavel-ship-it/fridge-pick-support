@@ -2,8 +2,6 @@
 
 Public GitHub Pages site for **Fridge Pick: Quick Meal Ideas**, live at [https://pavel-ship-it.github.io/fridge-pick-support/](https://pavel-ship-it.github.io/fridge-pick-support/). Sources live in `site/` and are built into `docs/`, which GitHub Pages serves from `main`. The site is English only, like the app.
 
-> `site/build.py` deletes and regenerates `docs/` on every rebuild (`shutil.rmtree`). This file will be lost unless the build is later updated to keep it.
-
 ## Implemented features
 
 - **English-only site.** There is no `/ru/` section, no automatic locale redirect, and no language switcher. A request to `/ru/` is served as a 404. Verified by `check_en()` in `site/build.py`, which fails the build if Russian text or leftover `/ru/` / `hreflang="ru"` appears, and by a manual check of the live `/ru/` URL.
