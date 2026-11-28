@@ -42,7 +42,9 @@ kbd,.ui{font-family:inherit;font-weight:650;background:var(--mint-50);border:1px
 .btn.primary:hover{background:var(--green-d);color:#fff}
 .btn:hover{border-color:var(--green-d)}
 .soon{color:var(--muted);font-size:.95rem;margin:0 0 10px}
-.store-links{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 10px}
+.store-links{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 10px}
+.store-badge{display:inline-block;padding:10px;line-height:0;text-decoration:none}
+.store-badge img{display:block;width:119.66407px;height:40px;max-width:none;border:0}
 .store-btn{display:inline-flex;flex-direction:column;background:#111;color:#fff;border-radius:12px;padding:6px 16px;text-decoration:none;line-height:1.15}
 .store-btn:hover{color:#fff;background:#000}
 .store-small{font-size:.7rem}.store-big{font-size:1.15rem;font-weight:700}

@@ -8,7 +8,7 @@
 <!-- STORE-BADGES:START  (store links come from site/config.json "stores"; empty = not public yet) -->
 {%- if stores.app_store or stores.google_play %}
 <div class="store-links">
-{%- if stores.app_store %}<a class="store-btn" href="{{ stores.app_store }}" rel="noopener"><span class="store-small">{{ t.badge_apple_small }}</span><span class="store-big">App Store</span></a>{% endif %}
+{%- if stores.app_store %}<a class="store-badge" href="{{ stores.app_store }}" rel="noopener"><img src="{{ rel('/assets/app-store-badge-black.svg') }}" width="119.66407" height="40" alt="Download on the App Store"></a>{% endif %}
 {%- if stores.google_play %}<a class="store-btn" href="{{ stores.google_play }}" rel="noopener"><span class="store-small">{{ t.badge_google_small }}</span><span class="store-big">Google Play</span></a>{% endif %}
 </div>
 {%- endif %}
