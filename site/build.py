@@ -90,7 +90,7 @@ def md_page(key):
 
 
 def check_en(path, text):
-    """English site. Pages may quote Russian app labels. No /ru/ pages."""
+    """English-only site. No /ru/ pages."""
     if '/ru/' in text or re.search(r'hreflang="ru"', text):
         raise SystemExit(f'/ru/ or Russian hreflang leftover on {path}')
 

@@ -27,22 +27,22 @@
  {
   "id": "faq-badges",
   "q": "What do the badges on a dish mean?",
-  "a": "<p>A dish you cooked in the last 14 days, including day 14, shows <span class=\"ui\">Cooked today</span>, <span class=\"ui\">Cooked yesterday</span> or <span class=\"ui\">Cooked N days ago</span>. On a Russian phone those lines are <span class=\"ui\">Готовили сегодня</span>, <span class=\"ui\">Готовили вчера</span> and <span class=\"ui\">Готовили N дня</span> or <span class=\"ui\">дней назад</span>. A dish you have never cooked, or last cooked longer ago than that, has no badge. Tap <span class=\"ui\">I made this</span> on a dish page to update it.</p>"
+  "a": "<p>A dish you cooked in the last 14 days, including day 14, shows <span class=\"ui\">Cooked today</span>, <span class=\"ui\">Cooked yesterday</span> or <span class=\"ui\">Cooked N days ago</span>. A dish you have never cooked, or last cooked longer ago than that, has no badge. Tap <span class=\"ui\">I made this</span> on a dish page to update it.</p>"
  },
  {
   "id": "faq-units",
   "q": "How do I switch between metric and imperial?",
-  "a": "<p>Open <span class=\"ui\">Settings</span> and choose <span class=\"ui\">Units</span>: <span class=\"ui\">Auto</span>, <span class=\"ui\">Metric</span> or <span class=\"ui\">Imperial</span>. Auto follows the phone’s measurement settings, or the region when the phone does not report them. The United States, Liberia and Myanmar use imperial in that fallback; every other region uses metric. A UK measurement setting uses imperial (ounces, cups and °F). Nutrition stays in grams. On a Russian phone the heading is <span class=\"ui\">Единицы</span>, and the choices are <span class=\"ui\">Авто</span>, <span class=\"ui\">Метрические</span> and <span class=\"ui\">Имперские</span>.</p>"
+  "a": "<p>Open <span class=\"ui\">Settings</span> and choose <span class=\"ui\">Units</span>: <span class=\"ui\">Auto</span>, <span class=\"ui\">Metric</span> or <span class=\"ui\">Imperial</span>. Auto follows the phone’s measurement settings, or the region when the phone does not report them. The United States, Liberia and Myanmar use imperial in that fallback; every other region uses metric. A UK measurement setting uses imperial (ounces, cups and °F). Nutrition stays in grams.</p>"
  },
  {
   "id": "faq-fruits",
   "q": "What happened to the Fruits item in My fridge?",
-  "a": "<p>Fresh fruit is now its own <span class=\"ui\">Fruits</span> section (<span class=\"ui\">Фрукты</span> on a Russian phone), with a chip for each fruit. There is no generic Fruits item. If you had Fruits ticked, the next launch ticks Apple, Banana, Orange, Berries, Grapes, Melon and Watermelon instead, and removes only that old tick. A dish such as fruit salad or yoghurt with fruit accepts any suitable fruit you have. The dish page shows that line as <span class=\"ui\">Any fruit</span>.</p>"
+  "a": "<p>Fresh fruit is now its own <span class=\"ui\">Fruits</span> section, with a chip for each fruit. There is no generic Fruits item. If you had Fruits ticked, the next launch ticks Apple, Banana, Orange, Berries, Grapes, Melon and Watermelon instead, and removes only that old tick. A dish such as fruit salad or yoghurt with fruit accepts any suitable fruit you have. The dish page shows that line as <span class=\"ui\">Any fruit</span>.</p>"
  },
  {
   "id": "faq-season",
   "q": "What does “In season” mean?",
-  "a": "<p>On Home, the line under the hero reads <span class=\"ui\">In season</span> when the season is why that dish is ahead of the next one. On a Russian phone it reads <span class=\"ui\">По сезону</span>. The <span class=\"ui\">Seasonal</span> filter on the Cookbook keeps dishes tagged for the current season. The hemisphere comes from the phone’s region. A dish is not hidden on Home just for being out of season.</p>"
+  "a": "<p>On Home, the line under the hero reads <span class=\"ui\">In season</span> when the season is why that dish is ahead of the next one. The <span class=\"ui\">Seasonal</span> filter on the Cookbook keeps dishes tagged for the current season. The hemisphere comes from the phone’s region. A dish is not hidden on Home just for being out of season.</p>"
  },
  {
   "id": "faq-microwave",
