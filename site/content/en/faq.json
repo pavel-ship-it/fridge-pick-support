@@ -10,11 +10,6 @@
   "a": "<p>Yes. All dishes, recipes and photos are built into the app, and it never connects to the internet. You only need a connection to install or update it from the App Store or Google Play.</p>"
  },
  {
-  "id": "faq-language",
-  "q": "Which languages does the app support?",
-  "a": "<p>Most of the app is in English. Home, the tab bar, fruit names, the units setting and the seasonal line follow the phone’s language: Russian when the phone is set to Russian, and English otherwise. This website is in English.</p>"
- },
- {
   "id": "faq-missing-dishes",
   "q": "Why don’t I see some dishes in the Cookbook?",
   "a": "<p>A dish is left off the Cookbook when you hid it, when it contains one of your allergens (with <span class=\"ui\">Hide dishes with my allergens</span> on), when it needs an ingredient you excluded, or when a filter is on. <span class=\"ui\">Seasonal</span> keeps only dishes tagged for the current season, so all-year dishes stay off that chip. Tap <span class=\"ui\">Clear filters</span> if nothing matches, and check the tabs in <span class=\"ui\">Settings → Menu</span> to see every dish and why it isn’t shown. Home uses the same allergy, exclusion and kitchen rules, and it also skips dishes you cooked today or yesterday.</p>"
