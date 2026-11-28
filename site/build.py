@@ -49,9 +49,9 @@ URLS = {
 PAGES = {
     'home': dict(title='Fridge Pick: Quick Meal Ideas from What’s in Your Fridge (iPhone & Android)',
                  og_title='Fridge Pick: Quick Meal Ideas',
-                 description='Tick what’s in your fridge and see what you can cook right now. Quick recipes (15 min or less), I’m hungry suggestions, a week plan and a shopping list. Offline, no account.'),
+                 description='Tick what’s in your fridge and Home shows what you can cook right now. Quick recipes (15 min or less), a cookbook, I’m hungry suggestions, a week plan and a shopping list. Metric or imperial units. Offline, no account.'),
     'manual': dict(title='Fridge Pick User Manual: How to Use Every Feature', crumb='User manual',
-                   description='Step-by-step guide to Fridge Pick: My fridge, filters, dish pages, sharing recipe cards, I’m hungry, week plan, shopping list, allergies, excluded ingredients, kitchen settings and FAQ.'),
+                   description='Step-by-step guide to Fridge Pick: Home, the Cookbook, My fridge and individual fruits, Seasonal, units, dish pages, sharing recipe cards, I’m hungry, week plan, shopping list and FAQ.'),
     'support': dict(title='Support – Fridge Pick', crumb='Support',
                     description='Get help with Fridge Pick: contact the developer, report a bug, and read answers about your data, offline use, allergen labels and dish photos.'),
     'privacy': dict(title='Privacy Policy – Fridge Pick', crumb='Privacy Policy',
@@ -90,11 +90,7 @@ def md_page(key):
 
 
 def check_en(path, text):
-    """English-only site: no Russian text and no leftover /ru/ links."""
-    t = re.sub(r'<script type="application/ld\+json">.*?</script>', '', text, flags=re.S)
-    bad = sorted(set(m.group(0) for m in re.finditer(r'\S*[\u0400-\u04FF]\S*', t)))
-    if bad:
-        raise SystemExit(f'Russian text on {path}: {bad[:10]}')
+    """English site. Pages may quote Russian app labels. No /ru/ pages."""
     if '/ru/' in text or re.search(r'hreflang="ru"', text):
         raise SystemExit(f'/ru/ or Russian hreflang leftover on {path}')
 
@@ -174,7 +170,10 @@ def main():
 
 def home_ld(page):
     feats = [
-        'My fridge: tick the products you have and see dishes you can make now',
+        'Home: what you can cook from what’s at home, with a glass tab bar (Home, Cookbook, Fridge, Plan)',
+        'My fridge: tick the products you have, including individual fruits, and see dishes you can make now',
+        'Seasonal dishes: an In season line on Home and a Seasonal filter, using the hemisphere of your region',
+        'Units: Auto (from the phone), Metric or Imperial',
         'Quick dishes, 15 minutes or less, with photos, recipes and nutrition per serving',
         "I'm hungry: answer a few quick questions and get 3–5 dish suggestions",
         'Week plan for the next 7 days with Fill week and replacement suggestions',

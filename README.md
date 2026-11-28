@@ -1,7 +1,9 @@
 # Fridge Pick support site
 
 Static site for **Fridge Pick: Quick Meal Ideas**, served by GitHub Pages from `docs/`
-(https://pavel-ship-it.github.io/fridge-pick-support/). The site is in English, like the app.
+(https://pavel-ship-it.github.io/fridge-pick-support/). The site is in English.
+The app is mostly English; Home, the tab bar, fruit names, units and the seasonal
+line also have Russian wording when the phone language is Russian. The manual quotes those labels.
 
 `docs/` is generated — edit the sources in `site/` and rebuild:
 
