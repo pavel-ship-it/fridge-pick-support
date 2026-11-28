@@ -6,14 +6,13 @@
 {%- endmacro %}
 {% macro badges(stores, t) -%}
 <!-- STORE-BADGES:START  (store links come from site/config.json "stores"; empty = not public yet) -->
-{%- if stores.app_store or stores.google_play %}
 <div class="store-links">
 {%- if stores.app_store %}<a class="store-badge" href="{{ stores.app_store }}" rel="noopener"><img src="{{ rel('/assets/app-store-badge-black.svg') }}" width="119.66407" height="40" alt="Download on the App Store"></a>{% endif %}
-{%- if stores.google_play %}<a class="store-btn" href="{{ stores.google_play }}" rel="noopener"><span class="store-small">{{ t.badge_google_small }}</span><span class="store-big">Google Play</span></a>{% endif %}
+{%- if stores.google_play %}<a class="store-badge" href="{{ stores.google_play }}" rel="noopener"><img src="{{ rel('/assets/google-play-badge.svg') }}" width="134.87" height="40" alt="Get it on Google Play"></a>
+{%- else %}
+<!-- Future Google Play URL: https://play.google.com/store/apps/details?id=com.py.fridgepick -->
+<div class="store-badge store-badge-soon"><img src="{{ rel('/assets/google-play-badge.svg') }}" width="134.87" height="40" alt="Get it on Google Play"><span class="store-soon-caption">Coming soon</span></div>
+{%- endif %}
 </div>
-{%- endif %}
-{%- if not (stores.app_store and stores.google_play) %}
-<p class="soon">{% if stores.app_store %}{{ t.soon_play }}{% elif stores.google_play %}{{ t.soon_apple }}{% else %}{{ t.soon_both }}{% endif %}</p>
-{%- endif %}
 <!-- STORE-BADGES:END -->
 {%- endmacro %}
