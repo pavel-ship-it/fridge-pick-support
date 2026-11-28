@@ -10,14 +10,9 @@
   "a": "<p>Yes. All dishes, recipes and photos are built into the app, and it never connects to the internet. You only need a connection to install or update it from the App Store or Google Play.</p>"
  },
  {
-  "id": "faq-language",
-  "q": "Which languages does the app support?",
-  "a": "<p>The interface is in English. This website is available in English and Russian.</p>"
- },
- {
   "id": "faq-missing-dishes",
-  "q": "Why don’t I see some dishes on the home screen?",
-  "a": "<p>A dish is left out when you hid it, when it contains one of your allergens (with <span class=\"ui\">Hide dishes with my allergens</span> on), when it needs an ingredient you excluded, or when a filter is on. Tap <span class=\"ui\">Clear filters</span> if nothing matches, and check the tabs in <span class=\"ui\">Settings → Menu</span> to see every dish and why it isn’t shown.</p>"
+  "q": "Why don’t I see some dishes in the Cookbook?",
+  "a": "<p>A dish is left off the Cookbook when you hid it, when it contains one of your allergens (with <span class=\"ui\">Hide dishes with my allergens</span> on), when it needs an ingredient you excluded, or when a filter is on. <span class=\"ui\">Seasonal</span> keeps only dishes tagged for the current season, so all-year dishes stay off that chip. Tap <span class=\"ui\">Clear filters</span> if nothing matches, and check the tabs in <span class=\"ui\">Settings → Menu</span> to see every dish and why it isn’t shown. Home uses the same allergy, exclusion and kitchen rules, and it also skips dishes you cooked today or yesterday.</p>"
  },
  {
   "id": "faq-unhide",
@@ -31,8 +26,23 @@
  },
  {
   "id": "faq-badges",
-  "q": "What do the “Never” and “Stale” badges mean?",
-  "a": "<p><span class=\"ui\">Never</span> means you haven’t marked the dish as made yet. <span class=\"ui\">Stale</span> means you last made it 5 or more days ago. Tap <span class=\"ui\">I made this</span> on a dish page to update it.</p>"
+  "q": "What do the badges on a dish mean?",
+  "a": "<p>A dish you cooked in the last 14 days, including day 14, shows <span class=\"ui\">Cooked today</span>, <span class=\"ui\">Cooked yesterday</span> or <span class=\"ui\">Cooked N days ago</span>. A dish you have never cooked, or last cooked longer ago than that, has no badge. Tap <span class=\"ui\">I made this</span> on a dish page to update it.</p>"
+ },
+ {
+  "id": "faq-units",
+  "q": "How do I switch between metric and imperial?",
+  "a": "<p>Open <span class=\"ui\">Settings</span> and choose <span class=\"ui\">Units</span>: <span class=\"ui\">Auto</span>, <span class=\"ui\">Metric</span> or <span class=\"ui\">Imperial</span>. Auto follows the phone’s measurement settings, or the region when the phone does not report them. The United States, Liberia and Myanmar use imperial in that fallback; every other region uses metric. A UK measurement setting uses imperial (ounces, cups and °F). Nutrition stays in grams.</p>"
+ },
+ {
+  "id": "faq-fruits",
+  "q": "What happened to the Fruits item in My fridge?",
+  "a": "<p>Fresh fruit is now its own <span class=\"ui\">Fruits</span> section, with a chip for each fruit. There is no generic Fruits item. If you had Fruits ticked, the next launch ticks Apple, Banana, Orange, Berries, Grapes, Melon and Watermelon instead, and removes only that old tick. A dish such as fruit salad or yoghurt with fruit accepts any suitable fruit you have. The dish page shows that line as <span class=\"ui\">Any fruit</span>.</p>"
+ },
+ {
+  "id": "faq-season",
+  "q": "What does “In season” mean?",
+  "a": "<p>On Home, the line under the hero reads <span class=\"ui\">In season</span> when the season is why that dish is ahead of the next one. The <span class=\"ui\">Seasonal</span> filter on the Cookbook keeps dishes tagged for the current season. The hemisphere comes from the phone’s region. A dish is not hidden on Home just for being out of season.</p>"
  },
  {
   "id": "faq-microwave",
