@@ -42,6 +42,7 @@
 <p>A glass tab bar floats along the bottom, the same on iPhone and Android. The screen shows through the blurred bar. The tabs are <span class="ui">Home</span>, <span class="ui">Cookbook</span>, <span class="ui">Fridge</span> and <span class="ui">Plan</span>. On a Russian phone they read <span class="ui">Главная</span>, <span class="ui">Книга</span>, <span class="ui">Холодильник</span> and <span class="ui">План</span>. <span class="ui">Fridge</span> opens My fridge. <span class="ui">Plan</span> opens the week plan. On Home, a list button opens the Cookbook and a gear opens <span class="ui">Settings</span>. The round <span class="ui">I’m hungry</span> button floats on the Cookbook, above the tab bar.</p>
 
 <h2 id="home">2. Home</h2>
+{{ shot('01_home', 'Home: a hero dish card with an In season line, fridge chips, and a glass tab bar for Home, Cookbook, Fridge and Plan', 'Home', cls='side-shot') }}
 <p><span class="ui">Home</span> is the screen the app opens on. The title is Fridge Pick. It answers what you can cook from what’s at home. It is not the full list; that is the <a href="#cookbook">Cookbook</a>.</p>
 <p>Outlined chips along the top narrow the picks. They combine.</p>
 <ul>
@@ -63,9 +64,10 @@
 <p>Below that, two columns, each hidden when empty and showing at most six dishes: <span class="ui">Haven’t cooked lately</span> (<span class="ui">Давно не готовил</span>), for dishes you have cooked before and not in the last 5 days, and <span class="ui">Favorites</span> (<span class="ui">Любимое</span>).</p>
 <p>Home skips dishes you cooked today or yesterday. It also leaves out hidden dishes and dishes that don’t suit your allergies, excluded ingredients or kitchen. A dish is not hidden just for being out of season; the season only changes what comes first. The hemisphere comes from the phone’s region. A region mostly south of the equator, such as Australia, New Zealand, South Africa, Argentina, Chile or Brazil, uses the opposite season. Countries on the equator, and a region the app does not recognise, stay on the northern calendar: winter is December to February, spring March to May, summer June to August, and autumn September to November.</p>
 <p>If nothing is left, Home says “Nothing fits. Clear a filter or open the cookbook.” When you have already passed every pick, it says “That’s every pick for now.” An empty menu says “No dishes on your menu.” On a Russian phone those lines are “Ничего не подходит. Снимите фильтр или откройте книгу.”, “Это все варианты на сейчас.” and “В меню пока пусто.”</p>
+<div class="clear"></div>
 
 <h2 id="cookbook">3. Cookbook and dish cards</h2>
-{{ shot('01_home', 'Dish grid: filter chips, photos, fridge hints and an I’m hungry button', 'The cookbook', cls='side-shot') }}
+{{ shot('08_cookbook', 'Cookbook: a grid of dish cards with filters such as Can make now, fridge hints, an I’m hungry button, and a glass tab bar with Cookbook selected', 'The cookbook', cls='side-shot') }}
 <p>The <span class="ui">Cookbook</span> tab (<span class="ui">Книга</span> in Russian) is the full list of dishes, as photo cards. The title is Fridge Pick. Dishes you have never made come first, followed by the ones you haven’t had for the longest time, so the grid keeps your meals varied.</p>
 <p>Each card can show:</p>
 <ul>
@@ -94,7 +96,7 @@
 <p>If no dish matches, tap <span class="ui">Clear filters</span>.</p>
 
 <h2 id="my-fridge">5. My fridge</h2>
-{{ shot('07_my_fridge', 'My fridge screen with a search field and product chips grouped by Eggs, Dairy and Produce', 'My fridge', cls='side-shot') }}
+{{ shot('07_my_fridge', 'My fridge: the Fruits section with individual fruit chips such as Apple, Banana and Strawberry, and a glass tab bar with Fridge selected', 'My fridge', cls='side-shot') }}
 <p>My fridge is the list of products you have at home. Open it with the <span class="ui">Fridge</span> tab, or <span class="ui">Settings → My fridge</span>. The screen title stays <span class="ui">My fridge</span>. Fridge Pick compares it with each dish’s ingredients to show what you can cook right now.</p>
 <h3>How to fill your fridge</h3>
 <ol class="how">
@@ -175,7 +177,7 @@
 <div class="clear"></div>
 
 <h2 id="week-plan">10. Week plan</h2>
-{{ shot('05_week_plan', 'Week plan: the next 7 days starting with Today, each with up to 3 dishes, add and remove buttons, and a Fill week button', 'The week plan', cls='side-shot') }}
+{{ shot('05_week_plan', 'Plan tab: the week plan for the coming days, and a glass tab bar with Plan selected', 'The week plan', cls='side-shot') }}
 <p>Plan meals for the next 7 days, starting today, with up to 3 dishes a day. Days can also stay empty.</p>
 <h3>Fill the week automatically</h3>
 <ol class="how">
@@ -242,6 +244,7 @@
 </ul>
 
 <h2 id="units">14. Settings: Units</h2>
+{{ shot('09_settings_units', 'Settings: the Units setting with Auto, Metric and Imperial; Auto is selected', 'Units', cls='side-shot') }}
 <p>Recipe amounts, oven temperatures and lengths can show in metric or in US customary units. The recipes themselves stay metric; only the display changes, including on a shared recipe card. Nutrition stays in grams. Open <span class="ui">Settings</span> and find <span class="ui">Units</span> (<span class="ui">Единицы</span> on a Russian phone). The choice is saved on the phone, and an open recipe updates when you change it.</p>
 <ul>
   <li><span class="ui">Auto</span> (<span class="ui">Авто</span>) is the default. It follows the phone’s measurement setting when iOS or Android reports one. A metric setting shows grams, milliliters and °C. A US, imperial or UK measurement setting shows ounces, cups and °F. When the phone does not report a measurement system, the United States, Liberia and Myanmar use imperial, and every other region uses metric. The line under the heading says which, for example “Follows your phone · grams, milliliters and °C” (“Как на телефоне · граммы, миллилитры и °C”).</li>
@@ -249,6 +252,7 @@
   <li><span class="ui">Imperial</span> (<span class="ui">Имперские</span>): ounces, cups and °F (<span class="ui">Унции, чашки и °F</span>).</li>
 </ul>
 <p>A line that already gives both, such as 180°C (360°F) or 1 cup (240 ml), keeps the side that matches your choice. Counts, pinches, “to taste”, and spoon measures already written as tsp or tbsp stay as written.</p>
+<div class="clear"></div>
 
 <h2 id="allergies">15. Settings: Allergies</h2>
 <p>Choose your allergens and intolerances from 11 common ones: Gluten, Dairy / lactose, Eggs, Peanuts, Tree nuts, Soy, Fish, Shellfish, Sesame, Celery and Mustard.</p>

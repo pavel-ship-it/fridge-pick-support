@@ -190,7 +190,7 @@ def home_ld(page):
         'operatingSystem': 'iOS, Android', 'applicationCategory': 'LifestyleApplication',
         'applicationSubCategory': 'Food & Drink', 'softwareVersion': '1.0.0',
         'image': abs_('/assets/img/icon-512.jpg'),
-        'screenshot': [abs_(f'/assets/img/{n}-720.webp') for n in ('01_home', '02_recipe', '03_im_hungry', '05_week_plan', '06_shopping_list', '07_my_fridge')],
+        'screenshot': [abs_(f'/assets/img/{n}-720.webp') for n in ('01_home', '08_cookbook', '02_recipe', '03_im_hungry', '05_week_plan', '06_shopping_list', '07_my_fridge', '09_settings_units')],
         'featureList': feats,
         'author': {'@type': 'Person', 'name': 'Pavel Yakimenko', 'email': 'mailto:dreamcomenull@gmail.com'},
         'publisher': {'@type': 'Person', 'name': 'Pavel Yakimenko'},
